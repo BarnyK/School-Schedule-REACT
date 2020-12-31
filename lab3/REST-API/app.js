@@ -1,15 +1,17 @@
-const express = require('express');
-const cors = require('cors');
+var express = require('express');
+var cors = require('cors');
 var activityRouter = require('./routes/activity');
 var roomRouter = require('./routes/room');
 var subjectRouter = require('./routes/subject');
 var teacherRouter = require('./routes/teacher');
 var groupRouter = require('./routes/group');
 
-const app = express();
-const port = 3001;
+var app = express();
+var port = 3001;
 
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 
 app.get('/', (req, res) => {
   res.send('API works :)')
