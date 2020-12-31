@@ -10,7 +10,16 @@ router.get("/", function (req, res) {
   });
 });
 
-router.get("/:room", )
+router.get("/:room", function (req, res) {
+  let room = req.params.room;
+  console.log(room);
+  fs.readFile("data.json", (err, data) => {
+    if (err) throw err;
+    let jsonData = JSON.parse(data);
+    jsonData = jsonData["activities"].filter((act) => act["room"] === room);
+    res.send(jsonData);
+  });
+});
 
 router.post("/", function (req, res) {
   res.send("Got a POST request");
