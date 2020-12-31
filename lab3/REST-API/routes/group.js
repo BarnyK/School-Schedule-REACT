@@ -1,8 +1,13 @@
 var express = require("express");
 var router = express.Router();
+const fs = require('fs');
 
 router.get("/", function(req, res, next) {
-    res.send("API is working properly");
+    fs.readFile('data.json',(err,data) => {
+        if(err) throw err;
+        let jsonData = JSON.parse(data);
+        res.send(jsonData["groups"]);
+    });
 });
 
 module.exports = router;

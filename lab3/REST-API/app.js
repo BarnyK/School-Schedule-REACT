@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 app.use('/activity', activityRouter);
 app.use('/room', roomRouter);
-app.use('/subject', subjectRouter);
+app.use('/class', subjectRouter);
 app.use('/teacher', teacherRouter);
 app.use('/group', groupRouter);
 
