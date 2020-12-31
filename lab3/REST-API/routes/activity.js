@@ -3,21 +3,17 @@ var router = express.Router();
 const fs = require("fs");
 
 router.get("/", function (req, res) {
+  let room = req.query.room;
+  let slot = req.query.slot;
+  let day = req.query.day;
   fs.readFile("data.json", (err, data) => {
     if (err) throw err;
     let jsonData = JSON.parse(data);
-    res.send(jsonData["activities"]);
-  });
-});
-
-router.get("/:room", function (req, res) {
-  let room = req.params.room;
-  console.log(room);
-  fs.readFile("data.json", (err, data) => {
-    if (err) throw err;
-    let jsonData = JSON.parse(data);
-    jsonData = jsonData["activities"].filter((act) => act["room"] === room);
-    res.send(jsonData);
+    let responseData = jsonData["activities"];
+    if (room) responseData = responseData.filter((act) => act["room"] == room);
+    if (slot) responseData = responseData.filter((act) => act["slot"] == slot);
+    if (day) responseData = responseData.filter((act) => act["day"] == day);
+    res.send(responseData);
   });
 });
 
