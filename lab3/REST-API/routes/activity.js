@@ -9,7 +9,7 @@ function makeActivity(body) {
     day: body.day,
     group: body.group,
     teacher: body.teacher,
-    class: body.subject,
+    class: body.class,
   };
 }
 
@@ -61,12 +61,19 @@ router.post("/", function (req, res) {
   // Create activity
   console.log(req.body);
   let act = makeActivity(req.body);
+  console.log(act);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
-  if (checkValidActivity(act, data) && checkActivityExists(act, data["activities"])) {
-    // add activity, save file
+  if (
+    checkValidActivity(act, data) &&
+    checkActivityExists(act, data["activities"]) == -1
+  ) {
+    data["activities"].push(act);
+    data = JSON.stringify(data);
+    fs.writeFileSync("data.json", data);
+    res.send("success");
   } else {
-    // Bad request
+    res.send("failure");
   }
 });
 
