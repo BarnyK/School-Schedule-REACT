@@ -70,15 +70,27 @@ router.post("/", function (req, res) {
     data["activities"].push(act);
     data = JSON.stringify(data, null, 2);
     fs.writeFileSync("data.json", data);
-    res.sendStatus(200);
+    return res.sendStatus(200);
   } else {
-    res.sendStatus(400);
+    return res.sendStatus(400);
   }
 });
 
 router.put("/", function (req, res) {
   // Update activity
-  res.send("Got a PUT request");
+  let act = makeActivity(req.body);
+  let data = fs.readFileSync("data.json");
+  data = JSON.parse(data);
+  if(checkValidActivity(act,data)){
+    let i = checkActivityExists(act, data["activities"])
+    if(i !== -1){
+      data["activities"][i] = act;
+      data = JSON.stringify(data, null, 2);
+      fs.writeFileSync("data.json", data);
+      return res.sendStatus(200);
+    }
+  }
+  return res.sendStatus(400);
 });
 
 router.delete("/", function (req, res) {
