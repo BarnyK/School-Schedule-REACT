@@ -48,13 +48,13 @@ router.get("/", function (req, res) {
   let slot = req.query.slot;
   let day = req.query.day;
   fs.readFile("data.json", (err, data) => {
-    if (err) throw err;
+    if (err) return res.sendStatus(500);
     let jsonData = JSON.parse(data);
     let responseData = jsonData["activities"];
     if (room) responseData = responseData.filter((act) => act["room"] == room);
     if (slot) responseData = responseData.filter((act) => act["slot"] == slot);
     if (day) responseData = responseData.filter((act) => act["day"] == day);
-    res.send(responseData);
+    return res.send(responseData);
   });
 });
 
@@ -81,9 +81,9 @@ router.put("/", function (req, res) {
   let act = makeActivity(req.body);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
-  if(checkValidActivity(act,data)){
-    let i = checkActivityExists(act, data["activities"])
-    if(i !== -1){
+  if (checkValidActivity(act, data)) {
+    let i = checkActivityExists(act, data["activities"]);
+    if (i !== -1) {
       data["activities"][i] = act;
       data = JSON.stringify(data, null, 2);
       fs.writeFileSync("data.json", data);
@@ -95,7 +95,29 @@ router.put("/", function (req, res) {
 
 router.delete("/", function (req, res) {
   // Delete activity
-  res.send("Got a DELETE request");
+  let act = makeActivity(req.body);
+  let data = fs.readFileSync("data.json");
+  data = JSON.parse(data);
+  if (checkValidActivity(act, data)) {
+    if (
+      typeof act.day !== "undefined" &&
+      typeof act.slot !== "undefined" &&
+      typeof act.room !== "undefined"
+    ) {
+      data["activities"] = data["activities"].filter(
+        (activity) =>
+          !(
+            act.day == activity.day &&
+            act.slot == activity.slot &&
+            act.room == activity.room
+          )
+      );
+      data = JSON.stringify(data, null, 2);
+      fs.writeFileSync("data.json", data);
+      return res.sendStatus(200);
+    }
+  }
+  return res.sendStatus(400);
 });
 
 module.exports = router;
