@@ -6,7 +6,7 @@ router.get("/", function(req, res) {
     fs.readFile('data.json',(err,data) => {
         if(err) throw err;
         let jsonData = JSON.parse(data);
-        res.send(jsonData["groups"]);
+        return res.send(jsonData["groups"]);
     });
 });
 
