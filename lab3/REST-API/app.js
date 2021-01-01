@@ -1,5 +1,7 @@
 var express = require('express');
 var cors = require('cors');
+var logger = require('morgan');
+
 var activityRouter = require('./routes/activity');
 var roomRouter = require('./routes/room');
 var subjectRouter = require('./routes/subject');
@@ -10,6 +12,7 @@ var app = express();
 var port = 3001;
 
 app.use(cors());
+app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
