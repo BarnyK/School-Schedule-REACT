@@ -42,6 +42,7 @@ function checkActivityExists(activity, activityList) {
       act.day == activity.day
   );
 }
+
 router.get("/", function (req, res) {
   let room = req.query.room;
   let slot = req.query.slot;
@@ -59,9 +60,7 @@ router.get("/", function (req, res) {
 
 router.post("/", function (req, res) {
   // Create activity
-  console.log(req.body);
   let act = makeActivity(req.body);
-  console.log(act);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
   if (
@@ -69,11 +68,11 @@ router.post("/", function (req, res) {
     checkActivityExists(act, data["activities"]) == -1
   ) {
     data["activities"].push(act);
-    data = JSON.stringify(data);
+    data = JSON.stringify(data, null, 2);
     fs.writeFileSync("data.json", data);
-    res.send("success");
+    res.sendStatus(200);
   } else {
-    res.send("failure");
+    res.sendStatus(400);
   }
 });
 

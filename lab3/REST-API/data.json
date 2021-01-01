@@ -1,5 +1,26 @@
 {
-  "rooms": ["101", "102", "103", "201", "202", "203", "301", "302", "303"],
+  "rooms": [
+    "101",
+    "102",
+    "103",
+    "201",
+    "202",
+    "203",
+    "301",
+    "302",
+    "303"
+  ],
+  "groups": [
+    "1a",
+    "1b",
+    "1c",
+    "2a",
+    "2b",
+    "2c",
+    "3a",
+    "3b",
+    "3c"
+  ],
   "teachers": [
     "Rick",
     "John",
@@ -18,3247 +39,3166 @@
     "English",
     "History"
   ],
-  "groups": ["1a", "1b", "1c", "2a", "2b", "2c", "3a", "3b", "3c"],
   "activities": [
     {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "1c",
       "room": "101",
+      "class": "Geography"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "1b",
+      "room": "101",
+      "class": "Art"
+    },
+    {
       "slot": 0,
-      "day": 0,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Michael "
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "2b",
+      "room": "101",
+      "class": "Math"
     },
     {
-      "room": "101",
-      "slot": 1,
-      "day": 0,
-      "group": "2a",
-      "class": "English",
-      "teacher": "Adam"
-    },
-    {
-      "room": "101",
       "slot": 2,
-      "day": 0,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "Rick"
+      "day": 1,
+      "teacher": "Martin",
+      "group": "1b",
+      "room": "101",
+      "class": "Art"
     },
     {
-      "room": "101",
       "slot": 3,
-      "day": 0,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Michael "
+      "day": 1,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "101",
+      "class": "Art"
     },
     {
-      "room": "101",
       "slot": 4,
-      "day": 0,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "1b",
+      "room": "101",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "101",
+      "class": "English"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "101",
+      "class": "Geography"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "3b",
+      "room": "101",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "101",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "1c",
+      "room": "101",
+      "class": "English"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "101",
+      "class": "History"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "101",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "2b",
+      "room": "101",
+      "class": "History"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "1c",
+      "room": "101",
+      "class": "English"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "101",
+      "class": "Art"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "John",
+      "group": "2b",
+      "room": "101",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "101",
+      "class": "History"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "John",
+      "group": "1a",
+      "room": "101",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "John",
       "group": "3a",
-      "class": "Geography",
-      "teacher": "John"
+      "room": "101",
+      "class": "Math"
     },
     {
-      "room": "101",
-      "slot": 5,
-      "day": 0,
-      "group": "2b",
-      "class": "English",
-      "teacher": "Martin"
-    },
-    {
-      "room": "101",
-      "slot": 6,
-      "day": 0,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "101",
-      "slot": 7,
-      "day": 0,
-      "group": "1c",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 8,
-      "day": 0,
-      "group": "1b",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "101",
-      "slot": 0,
-      "day": 1,
-      "group": "2b",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "101",
-      "slot": 1,
-      "day": 1,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "101",
       "slot": 2,
-      "day": 1,
-      "group": "1b",
-      "class": "Art",
-      "teacher": "Martin"
-    },
-    {
-      "room": "101",
-      "slot": 3,
-      "day": 1,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "Rick"
-    },
-    {
-      "room": "101",
-      "slot": 4,
-      "day": 1,
-      "group": "1b",
-      "class": "Art",
-      "teacher": "Martin"
-    },
-    {
-      "room": "101",
-      "slot": 5,
-      "day": 1,
-      "group": "1c",
-      "class": "English",
-      "teacher": "Martin"
-    },
-    {
-      "room": "101",
-      "slot": 6,
-      "day": 1,
-      "group": "2a",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "101",
-      "slot": 7,
-      "day": 1,
-      "group": "3b",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "101",
-      "slot": 8,
-      "day": 1,
-      "group": "2b",
-      "class": "Physics",
-      "teacher": "Martin"
-    },
-    {
-      "room": "101",
-      "slot": 0,
-      "day": 2,
-      "group": "1c",
-      "class": "English",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 1,
-      "day": 2,
-      "group": "3c",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 2,
-      "day": 2,
-      "group": "2b",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "101",
-      "slot": 3,
-      "day": 2,
-      "group": "2a",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "101",
-      "slot": 4,
-      "day": 2,
-      "group": "2b",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "101",
-      "slot": 5,
-      "day": 2,
-      "group": "1c",
-      "class": "English",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 6,
-      "day": 2,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "101",
-      "slot": 7,
-      "day": 2,
-      "group": "2b",
-      "class": "Art",
-      "teacher": "John"
-    },
-    {
-      "room": "101",
-      "slot": 8,
-      "day": 2,
-      "group": "2b",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 0,
       "day": 3,
+      "teacher": "Michael ",
       "group": "1a",
-      "class": "Geography",
-      "teacher": "John"
+      "room": "101",
+      "class": "Geography"
     },
     {
-      "room": "101",
-      "slot": 1,
+      "slot": 4,
       "day": 3,
+      "teacher": "Michael ",
+      "group": "1b",
+      "room": "101",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Rick",
       "group": "3a",
-      "class": "Math",
-      "teacher": "John"
+      "room": "101",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "101",
+      "class": "Art"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "101",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "101",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "John",
+      "group": "2a",
+      "room": "101",
+      "class": "History"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "101",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "2b",
+      "room": "101",
+      "class": "PE"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "101",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "101",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "101",
+      "class": "Physics"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "3c",
+      "room": "101",
+      "class": "Math"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "101",
+      "class": "History"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "102",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "102",
+      "class": "Physics"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "102",
+      "class": "English"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "102",
+      "class": "Art"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "3a",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "3c",
+      "room": "102",
+      "class": "Geography"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "John",
+      "group": "3c",
+      "room": "102",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "1b",
+      "room": "102",
+      "class": "Physics"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "3c",
+      "room": "102",
+      "class": "Art"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "102",
+      "class": "History"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "3c",
+      "room": "102",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "John",
+      "group": "2c",
+      "room": "102",
+      "class": "English"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "John",
+      "group": "2a",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "1a",
+      "room": "102",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "1c",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "3b",
+      "room": "102",
+      "class": "Art"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "3b",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "1c",
+      "room": "102",
+      "class": "Geography"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "1b",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "John",
+      "group": "3c",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "102",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "2c",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "2c",
+      "room": "102",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "2b",
+      "room": "102",
+      "class": "Geography"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "3b",
+      "room": "102",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "John",
+      "group": "1a",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "102",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "102",
+      "class": "Physics"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "John",
+      "group": "3c",
+      "room": "102",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "3a",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Rick",
+      "group": "1b",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "1c",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "3a",
+      "room": "102",
+      "class": "Physics"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "John",
+      "group": "3a",
+      "room": "102",
+      "class": "History"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "1c",
+      "room": "102",
+      "class": "Physics"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "102",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "1c",
+      "room": "102",
+      "class": "History"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "102",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "John",
+      "group": "2b",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "1b",
+      "room": "102",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "2a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "103",
+      "class": "Physics"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "103",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "103",
+      "class": "History"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "3a",
+      "room": "103",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "3a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "John",
+      "group": "1a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "John",
+      "group": "1c",
+      "room": "103",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "2a",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "3b",
+      "room": "103",
+      "class": "History"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "103",
+      "class": "History"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "John",
+      "group": "2b",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "3c",
+      "room": "103",
+      "class": "English"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "3c",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "103",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "3a",
+      "room": "103",
+      "class": "Art"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "1c",
+      "room": "103",
+      "class": "English"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "1a",
+      "room": "103",
+      "class": "English"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "1a",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "1c",
+      "room": "103",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "1c",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "1c",
+      "room": "103",
+      "class": "Physics"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "3a",
+      "room": "103",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "103",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "John",
+      "group": "1a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "2b",
+      "room": "103",
+      "class": "English"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "3a",
+      "room": "103",
+      "class": "English"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "103",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "103",
+      "class": "Art"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "103",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "103",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "103",
+      "class": "Physics"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "John",
+      "group": "1b",
+      "room": "103",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "3a",
+      "room": "103",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "John",
+      "group": "2b",
+      "room": "103",
+      "class": "English"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "1a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "103",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "2c",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "3a",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "2c",
+      "room": "201",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "3b",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "John",
+      "group": "2a",
+      "room": "201",
+      "class": "Physics"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "3c",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "1a",
+      "room": "201",
+      "class": "Geography"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "3a",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "3a",
+      "room": "201",
+      "class": "Math"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "2a",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "3b",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "2b",
+      "room": "201",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "201",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "John",
+      "group": "3a",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "3c",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "1b",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "2c",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "1c",
+      "room": "201",
+      "class": "Math"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "3a",
+      "room": "201",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "2b",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "201",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "John",
+      "group": "3b",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "2a",
+      "room": "201",
+      "class": "Physics"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "3c",
+      "room": "201",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "3c",
+      "room": "201",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "1c",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "John",
+      "group": "2c",
+      "room": "201",
+      "class": "Physics"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "1a",
+      "room": "201",
+      "class": "Physics"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "201",
+      "class": "Geography"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "1b",
+      "room": "201",
+      "class": "Art"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "202",
+      "class": "Physics"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "3b",
+      "room": "202",
+      "class": "Math"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "202",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "1b",
+      "room": "202",
+      "class": "Math"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "2c",
+      "room": "202",
+      "class": "Physics"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "202",
+      "class": "Physics"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "1b",
+      "room": "202",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "3a",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "202",
+      "class": "History"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "2b",
+      "room": "202",
+      "class": "PE"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "1b",
+      "room": "202",
+      "class": "PE"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "202",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "John",
+      "group": "1b",
+      "room": "202",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "202",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "202",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "202",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "3c",
+      "room": "202",
+      "class": "English"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "202",
+      "class": "Math"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "202",
+      "class": "PE"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "1c",
+      "room": "202",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "1b",
+      "room": "202",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "202",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "202",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "2b",
+      "room": "202",
+      "class": "English"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "202",
+      "class": "History"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "202",
+      "class": "Art"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "202",
+      "class": "Physics"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "2a",
+      "room": "202",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "202",
+      "class": "English"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "202",
+      "class": "Art"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "1a",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "3b",
+      "room": "202",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "1a",
+      "room": "202",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "1b",
+      "room": "202",
+      "class": "Physics"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "202",
+      "class": "Art"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "2b",
+      "room": "202",
+      "class": "PE"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "2a",
+      "room": "202",
+      "class": "Art"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "202",
+      "class": "English"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "3c",
+      "room": "202",
+      "class": "Geography"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "203",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "203",
+      "class": "Geography"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "John",
+      "group": "1a",
+      "room": "203",
+      "class": "History"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "1c",
+      "room": "203",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "203",
+      "class": "History"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "203",
+      "class": "English"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "3a",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "203",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "203",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "John",
+      "group": "3a",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "203",
+      "class": "Physics"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "2c",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "2c",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "3a",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "203",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "John",
+      "group": "3b",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "3a",
+      "room": "203",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "203",
+      "class": "Math"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "203",
+      "class": "English"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "3b",
+      "room": "203",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "3c",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "1c",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "John",
+      "group": "3a",
+      "room": "203",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "2a",
+      "room": "203",
+      "class": "Geography"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "1c",
+      "room": "203",
+      "class": "History"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "3b",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "2c",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "John",
+      "group": "1b",
+      "room": "203",
+      "class": "Physics"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "1c",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "203",
+      "class": "Geography"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "3c",
+      "room": "203",
+      "class": "Geography"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "2c",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "1c",
+      "room": "203",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "John",
+      "group": "2c",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "203",
+      "class": "Physics"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "203",
+      "class": "PE"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "John",
+      "group": "1a",
+      "room": "203",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "John",
+      "group": "1c",
+      "room": "203",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "203",
+      "class": "English"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "2a",
+      "room": "203",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "John",
+      "group": "2a",
+      "room": "203",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "1a",
+      "room": "203",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "301",
+      "class": "Art"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "1b",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "John",
+      "group": "3b",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "2a",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "2b",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "3c",
+      "room": "301",
+      "class": "English"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "1c",
+      "room": "301",
+      "class": "Math"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "John",
+      "group": "3b",
+      "room": "301",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "301",
+      "class": "Math"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "3b",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "3b",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "3b",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "1a",
+      "room": "301",
+      "class": "Math"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "301",
+      "class": "Art"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "John",
+      "group": "1c",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "301",
+      "class": "PE"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "John",
+      "group": "2b",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "3c",
+      "room": "301",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "3a",
+      "room": "301",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "1b",
+      "room": "301",
+      "class": "English"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "2c",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "301",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "3a",
+      "room": "301",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "1a",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "John",
+      "group": "2c",
+      "room": "301",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "301",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Rick",
+      "group": "3c",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "301",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "John",
+      "group": "1a",
+      "room": "301",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "301",
+      "class": "Art"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "301",
+      "class": "English"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "3a",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "1b",
+      "room": "301",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "301",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "301",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "2a",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "1b",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "302",
+      "class": "PE"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "3c",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "3c",
+      "room": "302",
+      "class": "Art"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Brandon",
+      "group": "3c",
+      "room": "302",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "302",
+      "class": "Art"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "2c",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "1b",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "1b",
+      "room": "302",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "2a",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Brandon",
+      "group": "1a",
+      "room": "302",
+      "class": "PE"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "302",
+      "class": "PE"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "302",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "1a",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "2c",
+      "room": "302",
+      "class": "English"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "302",
+      "class": "Physics"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "302",
+      "class": "Art"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "2a",
+      "room": "302",
+      "class": "History"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "John",
+      "group": "3b",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "2c",
+      "room": "302",
+      "class": "English"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Rick",
+      "group": "1a",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "302",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "302",
+      "class": "Art"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "2b",
+      "room": "302",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "Martin",
+      "group": "1a",
+      "room": "302",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "1c",
+      "room": "302",
+      "class": "PE"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "1b",
+      "room": "302",
+      "class": "Physics"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "3b",
+      "room": "302",
+      "class": "English"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "302",
+      "class": "English"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "302",
+      "class": "Physics"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "302",
+      "class": "Physics"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "John",
+      "group": "2b",
+      "room": "302",
+      "class": "History"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "3b",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "3c",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "John",
+      "group": "2b",
+      "room": "302",
+      "class": "Math"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "302",
+      "class": "PE"
+    },
+    {
+      "slot": 0,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "2c",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 1,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "3b",
+      "room": "303",
+      "class": "Geography"
+    },
+    {
+      "slot": 2,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "303",
+      "class": "Geography"
+    },
+    {
+      "slot": 3,
+      "day": 0,
+      "teacher": "Adam",
+      "group": "1a",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 4,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "2b",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 5,
+      "day": 0,
+      "teacher": "Rick",
+      "group": "3c",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 6,
+      "day": 0,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "303",
+      "class": "Math"
+    },
+    {
+      "slot": 7,
+      "day": 0,
+      "teacher": "Martin",
+      "group": "1c",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 8,
+      "day": 0,
+      "teacher": "Michael ",
+      "group": "2b",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 0,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "3b",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 1,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "303",
+      "class": "Art"
+    },
+    {
+      "slot": 2,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "303",
+      "class": "Geography"
+    },
+    {
+      "slot": 3,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 4,
+      "day": 1,
+      "teacher": "Adam",
+      "group": "3b",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 5,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "3a",
+      "room": "303",
+      "class": "Art"
+    },
+    {
+      "slot": 6,
+      "day": 1,
+      "teacher": "Rodriguez",
+      "group": "1c",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 1,
+      "teacher": "Michael ",
+      "group": "3a",
+      "room": "303",
+      "class": "Math"
+    },
+    {
+      "slot": 8,
+      "day": 1,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 0,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "303",
+      "class": "Art"
+    },
+    {
+      "slot": 1,
+      "day": 2,
+      "teacher": "Rick",
+      "group": "2c",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 2,
+      "day": 2,
+      "teacher": "Michael ",
+      "group": "3c",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 3,
+      "day": 2,
+      "teacher": "Adam",
+      "group": "3c",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 4,
+      "day": 2,
+      "teacher": "Rodriguez",
+      "group": "1b",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 5,
+      "day": 2,
+      "teacher": "Martin",
+      "group": "1a",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 6,
+      "day": 2,
+      "teacher": "John",
+      "group": "3c",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 7,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "1b",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 8,
+      "day": 2,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "303",
+      "class": "Geography"
+    },
+    {
+      "slot": 0,
+      "day": 3,
+      "teacher": "Rick",
+      "group": "2b",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 1,
+      "day": 3,
+      "teacher": "John",
+      "group": "2b",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 2,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "1a",
+      "room": "303",
+      "class": "Math"
+    },
+    {
+      "slot": 3,
+      "day": 3,
+      "teacher": "John",
+      "group": "3a",
+      "room": "303",
+      "class": "PE"
+    },
+    {
+      "slot": 4,
+      "day": 3,
+      "teacher": "John",
+      "group": "1b",
+      "room": "303",
+      "class": "Geography"
+    },
+    {
+      "slot": 5,
+      "day": 3,
+      "teacher": "Brandon",
+      "group": "2c",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 6,
+      "day": 3,
+      "teacher": "Rick",
+      "group": "3c",
+      "room": "303",
+      "class": "PE"
+    },
+    {
+      "slot": 7,
+      "day": 3,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "303",
+      "class": "Math"
+    },
+    {
+      "slot": 8,
+      "day": 3,
+      "teacher": "Michael ",
+      "group": "2a",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 0,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "1b",
+      "room": "303",
+      "class": "Physics"
+    },
+    {
+      "slot": 1,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "3b",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 2,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "1b",
+      "room": "303",
+      "class": "Geography"
+    },
+    {
+      "slot": 3,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "3a",
+      "room": "303",
+      "class": "PE"
+    },
+    {
+      "slot": 4,
+      "day": 4,
+      "teacher": "Brandon",
+      "group": "2b",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 5,
+      "day": 4,
+      "teacher": "Martin",
+      "group": "2c",
+      "room": "303",
+      "class": "Math"
+    },
+    {
+      "slot": 6,
+      "day": 4,
+      "teacher": "Michael ",
+      "group": "3a",
+      "room": "303",
+      "class": "History"
+    },
+    {
+      "slot": 7,
+      "day": 4,
+      "teacher": "Rodriguez",
+      "group": "2a",
+      "room": "303",
+      "class": "English"
+    },
+    {
+      "slot": 8,
+      "day": 4,
+      "teacher": "Adam",
+      "group": "2c",
+      "room": "303",
+      "class": "History"
     },
     {
       "room": "101",
-      "slot": 2,
-      "day": 3,
+      "slot": "0",
+      "day": "0",
       "group": "1a",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 3,
-      "day": 3,
-      "group": "1b",
-      "class": "History",
-      "teacher": "John"
-    },
-    {
-      "room": "101",
-      "slot": 4,
-      "day": 3,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 5,
-      "day": 3,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "101",
-      "slot": 6,
-      "day": 3,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "101",
-      "slot": 7,
-      "day": 3,
-      "group": "1c",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "101",
-      "slot": 8,
-      "day": 3,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "101",
-      "slot": 0,
-      "day": 4,
-      "group": "2a",
-      "class": "History",
-      "teacher": "John"
-    },
-    {
-      "room": "101",
-      "slot": 1,
-      "day": 4,
-      "group": "1c",
-      "class": "History",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "101",
-      "slot": 2,
-      "day": 4,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "101",
-      "slot": 3,
-      "day": 4,
-      "group": "3c",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "101",
-      "slot": 4,
-      "day": 4,
-      "group": "3c",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "101",
-      "slot": 5,
-      "day": 4,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "101",
-      "slot": 6,
-      "day": 4,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "101",
-      "slot": 7,
-      "day": 4,
-      "group": "3c",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "101",
-      "slot": 8,
-      "day": 4,
-      "group": "2a",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "102",
-      "slot": 0,
-      "day": 0,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "102",
-      "slot": 1,
-      "day": 0,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "102",
-      "slot": 2,
-      "day": 0,
-      "group": "2a",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 3,
-      "day": 0,
-      "group": "1c",
-      "class": "Art",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 4,
-      "day": 0,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 5,
-      "day": 0,
-      "group": "2b",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "102",
-      "slot": 6,
-      "day": 0,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "102",
-      "slot": 7,
-      "day": 0,
-      "group": "3c",
-      "class": "Geography",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "102",
-      "slot": 8,
-      "day": 0,
-      "group": "3c",
-      "class": "Physics",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 0,
-      "day": 1,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "102",
-      "slot": 1,
-      "day": 1,
-      "group": "3c",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "102",
-      "slot": 2,
-      "day": 1,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "102",
-      "slot": 3,
-      "day": 1,
-      "group": "3c",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 4,
-      "day": 1,
-      "group": "2c",
-      "class": "English",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 5,
-      "day": 1,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 6,
-      "day": 1,
-      "group": "1a",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "102",
-      "slot": 7,
-      "day": 1,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "102",
-      "slot": 8,
-      "day": 1,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "102",
-      "slot": 0,
-      "day": 2,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "102",
-      "slot": 1,
-      "day": 2,
-      "group": "3b",
-      "class": "Art",
-      "teacher": "Rick"
-    },
-    {
-      "room": "102",
-      "slot": 2,
-      "day": 2,
-      "group": "3b",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "102",
-      "slot": 3,
-      "day": 2,
-      "group": "1c",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "102",
-      "slot": 4,
-      "day": 2,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "102",
-      "slot": 5,
-      "day": 2,
-      "group": "3c",
-      "class": "PE",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 6,
-      "day": 2,
-      "group": "3c",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "102",
-      "slot": 7,
-      "day": 2,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "Rick"
-    },
-    {
-      "room": "102",
-      "slot": 8,
-      "day": 2,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "102",
-      "slot": 0,
-      "day": 3,
-      "group": "2c",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 1,
-      "day": 3,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 2,
-      "day": 3,
-      "group": "3b",
-      "class": "Art",
-      "teacher": "Michael "
-    },
-    {
-      "room": "102",
-      "slot": 3,
-      "day": 3,
-      "group": "1a",
-      "class": "Math",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 4,
-      "day": 3,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "102",
-      "slot": 5,
-      "day": 3,
-      "group": "1c",
-      "class": "Physics",
-      "teacher": "Martin"
-    },
-    {
-      "room": "102",
-      "slot": 6,
-      "day": 3,
-      "group": "3c",
-      "class": "History",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 7,
-      "day": 3,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "102",
-      "slot": 8,
-      "day": 3,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "102",
-      "slot": 0,
-      "day": 4,
-      "group": "1c",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "102",
-      "slot": 1,
-      "day": 4,
-      "group": "3a",
-      "class": "Physics",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 2,
-      "day": 4,
-      "group": "3a",
-      "class": "History",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 3,
-      "day": 4,
-      "group": "1c",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "102",
-      "slot": 4,
-      "day": 4,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "102",
-      "slot": 5,
-      "day": 4,
-      "group": "1c",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "102",
-      "slot": 6,
-      "day": 4,
-      "group": "1c",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "102",
-      "slot": 7,
-      "day": 4,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "John"
-    },
-    {
-      "room": "102",
-      "slot": 8,
-      "day": 4,
-      "group": "1b",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "103",
-      "slot": 0,
-      "day": 0,
-      "group": "2a",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "103",
-      "slot": 1,
-      "day": 0,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "103",
-      "slot": 2,
-      "day": 0,
-      "group": "3c",
-      "class": "Art",
-      "teacher": "Michael "
-    },
-    {
-      "room": "103",
-      "slot": 3,
-      "day": 0,
-      "group": "1c",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 4,
-      "day": 0,
-      "group": "3a",
-      "class": "Art",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "103",
-      "slot": 5,
-      "day": 0,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "103",
-      "slot": 6,
-      "day": 0,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "John"
-    },
-    {
-      "room": "103",
-      "slot": 7,
-      "day": 0,
-      "group": "1c",
-      "class": "Art",
-      "teacher": "John"
-    },
-    {
-      "room": "103",
-      "slot": 8,
-      "day": 0,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "103",
-      "slot": 0,
-      "day": 1,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "103",
-      "slot": 1,
-      "day": 1,
-      "group": "2a",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 2,
-      "day": 1,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "103",
-      "slot": 3,
-      "day": 1,
-      "group": "2a",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 4,
-      "day": 1,
-      "group": "3c",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "103",
-      "slot": 5,
-      "day": 1,
-      "group": "2b",
-      "class": "Math",
-      "teacher": "John"
-    },
-    {
-      "room": "103",
-      "slot": 6,
-      "day": 1,
-      "group": "3c",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "103",
-      "slot": 7,
-      "day": 1,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 8,
-      "day": 1,
-      "group": "3c",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 0,
-      "day": 2,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 1,
-      "day": 2,
-      "group": "3a",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "103",
-      "slot": 2,
-      "day": 2,
-      "group": "3c",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "103",
-      "slot": 3,
-      "day": 2,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 4,
-      "day": 2,
-      "group": "1c",
-      "class": "English",
-      "teacher": "Adam"
-    },
-    {
-      "room": "103",
-      "slot": 5,
-      "day": 2,
-      "group": "1a",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "103",
-      "slot": 6,
-      "day": 2,
-      "group": "1a",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "103",
-      "slot": 7,
-      "day": 2,
-      "group": "1c",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "103",
-      "slot": 8,
-      "day": 2,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "103",
-      "slot": 0,
-      "day": 3,
-      "group": "1c",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "103",
-      "slot": 1,
-      "day": 3,
-      "group": "3a",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "103",
-      "slot": 2,
-      "day": 3,
-      "group": "3b",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "103",
-      "slot": 3,
-      "day": 3,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "John"
-    },
-    {
-      "room": "103",
-      "slot": 4,
-      "day": 3,
-      "group": "3b",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "103",
-      "slot": 5,
-      "day": 3,
-      "group": "2b",
-      "class": "English",
-      "teacher": "Adam"
-    },
-    {
-      "room": "103",
-      "slot": 6,
-      "day": 3,
-      "group": "3a",
-      "class": "English",
-      "teacher": "Michael "
-    },
-    {
-      "room": "103",
-      "slot": 7,
-      "day": 3,
-      "group": "2a",
-      "class": "Physics",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 8,
-      "day": 3,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "103",
-      "slot": 0,
-      "day": 4,
-      "group": "3a",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "103",
-      "slot": 1,
-      "day": 4,
-      "group": "2c",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 2,
-      "day": 4,
-      "group": "2a",
-      "class": "Physics",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 3,
-      "day": 4,
-      "group": "1a",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "103",
-      "slot": 4,
-      "day": 4,
-      "group": "1b",
-      "class": "Geography",
-      "teacher": "John"
-    },
-    {
-      "room": "103",
-      "slot": 5,
-      "day": 4,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "103",
-      "slot": 6,
-      "day": 4,
-      "group": "2b",
-      "class": "English",
-      "teacher": "John"
-    },
-    {
-      "room": "103",
-      "slot": 7,
-      "day": 4,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "103",
-      "slot": 8,
-      "day": 4,
-      "group": "2a",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "201",
-      "slot": 0,
-      "day": 0,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 1,
-      "day": 0,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "201",
-      "slot": 2,
-      "day": 0,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 3,
-      "day": 0,
-      "group": "2b",
-      "class": "History",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "201",
-      "slot": 4,
-      "day": 0,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "201",
-      "slot": 5,
-      "day": 0,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 6,
-      "day": 0,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 7,
-      "day": 0,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "201",
-      "slot": 8,
-      "day": 0,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 0,
-      "day": 1,
-      "group": "2a",
-      "class": "PE",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 1,
-      "day": 1,
-      "group": "3b",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 2,
-      "day": 1,
-      "group": "3c",
-      "class": "Art",
-      "teacher": "Michael "
-    },
-    {
-      "room": "201",
-      "slot": 3,
-      "day": 1,
-      "group": "2a",
-      "class": "Physics",
-      "teacher": "John"
-    },
-    {
-      "room": "201",
-      "slot": 4,
-      "day": 1,
-      "group": "3c",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "201",
-      "slot": 5,
-      "day": 1,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "201",
-      "slot": 6,
-      "day": 1,
-      "group": "1a",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 7,
-      "day": 1,
-      "group": "3a",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 8,
-      "day": 1,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "201",
-      "slot": 0,
-      "day": 2,
-      "group": "1c",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "201",
-      "slot": 1,
-      "day": 2,
-      "group": "2a",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "201",
-      "slot": 2,
-      "day": 2,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "201",
-      "slot": 3,
-      "day": 2,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 4,
-      "day": 2,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 5,
-      "day": 2,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "201",
-      "slot": 6,
-      "day": 2,
-      "group": "3a",
-      "class": "English",
-      "teacher": "John"
-    },
-    {
-      "room": "201",
-      "slot": 7,
-      "day": 2,
-      "group": "3b",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "201",
-      "slot": 8,
-      "day": 2,
-      "group": "3c",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 0,
-      "day": 3,
-      "group": "1b",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "201",
-      "slot": 1,
-      "day": 3,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "201",
-      "slot": 2,
-      "day": 3,
-      "group": "2c",
-      "class": "History",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "201",
-      "slot": 3,
-      "day": 3,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 4,
-      "day": 3,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "201",
-      "slot": 5,
-      "day": 3,
-      "group": "2b",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 6,
-      "day": 3,
-      "group": "2a",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 7,
-      "day": 3,
-      "group": "1b",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "201",
-      "slot": 8,
-      "day": 3,
-      "group": "3b",
-      "class": "English",
-      "teacher": "John"
-    },
-    {
-      "room": "201",
-      "slot": 0,
-      "day": 4,
-      "group": "2a",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 1,
-      "day": 4,
-      "group": "3c",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "201",
-      "slot": 2,
-      "day": 4,
-      "group": "2b",
-      "class": "Art",
-      "teacher": "Martin"
-    },
-    {
-      "room": "201",
-      "slot": 3,
-      "day": 4,
-      "group": "3c",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "201",
-      "slot": 4,
-      "day": 4,
-      "group": "1c",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "201",
-      "slot": 5,
-      "day": 4,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "John"
-    },
-    {
-      "room": "201",
-      "slot": 6,
-      "day": 4,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "201",
-      "slot": 7,
-      "day": 4,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "201",
-      "slot": 8,
-      "day": 4,
-      "group": "1b",
-      "class": "Art",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 0,
-      "day": 0,
-      "group": "3b",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "202",
-      "slot": 1,
-      "day": 0,
-      "group": "3b",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 2,
-      "day": 0,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 3,
-      "day": 0,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "202",
-      "slot": 4,
-      "day": 0,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 5,
-      "day": 0,
-      "group": "2b",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "202",
-      "slot": 6,
-      "day": 0,
-      "group": "1b",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 7,
-      "day": 0,
-      "group": "3a",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "202",
-      "slot": 8,
-      "day": 0,
-      "group": "2c",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "202",
-      "slot": 0,
-      "day": 1,
-      "group": "2a",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "202",
-      "slot": 1,
-      "day": 1,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 2,
-      "day": 1,
-      "group": "1b",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "202",
-      "slot": 3,
-      "day": 1,
-      "group": "1a",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 4,
-      "day": 1,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "John"
-    },
-    {
-      "room": "202",
-      "slot": 5,
-      "day": 1,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 6,
-      "day": 1,
-      "group": "3c",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "202",
-      "slot": 7,
-      "day": 1,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 8,
-      "day": 1,
-      "group": "3c",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 0,
-      "day": 2,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "Adam"
-    },
-    {
-      "room": "202",
-      "slot": 1,
-      "day": 2,
-      "group": "3c",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "202",
-      "slot": 2,
-      "day": 2,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 3,
-      "day": 2,
-      "group": "1b",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 4,
-      "day": 2,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "202",
-      "slot": 5,
-      "day": 2,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 6,
-      "day": 2,
-      "group": "2b",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "202",
-      "slot": 7,
-      "day": 2,
-      "group": "2b",
-      "class": "History",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 8,
-      "day": 2,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "202",
-      "slot": 0,
-      "day": 3,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Michael "
-    },
-    {
-      "room": "202",
-      "slot": 1,
-      "day": 3,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "202",
-      "slot": 2,
-      "day": 3,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 3,
-      "day": 3,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 4,
-      "day": 3,
-      "group": "2a",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "202",
-      "slot": 5,
-      "day": 3,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "Martin"
-    },
-    {
-      "room": "202",
-      "slot": 6,
-      "day": 3,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "202",
-      "slot": 7,
-      "day": 3,
-      "group": "3b",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 8,
-      "day": 3,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "202",
-      "slot": 0,
-      "day": 4,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "202",
-      "slot": 1,
-      "day": 4,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 2,
-      "day": 4,
-      "group": "2c",
-      "class": "Geography",
-      "teacher": "Rick"
-    },
-    {
-      "room": "202",
-      "slot": 3,
-      "day": 4,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 4,
-      "day": 4,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "202",
-      "slot": 5,
-      "day": 4,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 6,
-      "day": 4,
-      "group": "2a",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "202",
-      "slot": 7,
-      "day": 4,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Martin"
-    },
-    {
-      "room": "202",
-      "slot": 8,
-      "day": 4,
-      "group": "3c",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 0,
-      "day": 0,
-      "group": "1c",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 1,
-      "day": 0,
-      "group": "2a",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "203",
-      "slot": 2,
-      "day": 0,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Martin"
-    },
-    {
-      "room": "203",
-      "slot": 3,
-      "day": 0,
-      "group": "1a",
-      "class": "History",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 4,
-      "day": 0,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "203",
-      "slot": 5,
-      "day": 0,
-      "group": "2a",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 6,
-      "day": 0,
-      "group": "1a",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "203",
-      "slot": 7,
-      "day": 0,
-      "group": "3a",
-      "class": "Art",
-      "teacher": "Michael "
-    },
-    {
-      "room": "203",
-      "slot": 8,
-      "day": 0,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "203",
-      "slot": 0,
-      "day": 1,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 1,
-      "day": 1,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 2,
-      "day": 1,
-      "group": "2b",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "203",
-      "slot": 3,
-      "day": 1,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "203",
-      "slot": 4,
-      "day": 1,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 5,
-      "day": 1,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "203",
-      "slot": 6,
-      "day": 1,
-      "group": "2b",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "203",
-      "slot": 7,
-      "day": 1,
-      "group": "3b",
-      "class": "Art",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 8,
-      "day": 1,
-      "group": "3a",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "203",
-      "slot": 0,
-      "day": 2,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 1,
-      "day": 2,
-      "group": "2b",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "203",
-      "slot": 2,
-      "day": 2,
-      "group": "3b",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "203",
-      "slot": 3,
-      "day": 2,
-      "group": "3c",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 4,
-      "day": 2,
-      "group": "1b",
-      "class": "Art",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 5,
-      "day": 2,
-      "group": "1c",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "203",
-      "slot": 6,
-      "day": 2,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 7,
-      "day": 2,
-      "group": "2a",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "203",
-      "slot": 8,
-      "day": 2,
-      "group": "1c",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 0,
-      "day": 3,
-      "group": "3b",
-      "class": "PE",
-      "teacher": "Michael "
-    },
-    {
-      "room": "203",
-      "slot": 1,
-      "day": 3,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "203",
-      "slot": 2,
-      "day": 3,
-      "group": "1b",
-      "class": "Art",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 3,
-      "day": 3,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 4,
-      "day": 3,
-      "group": "1c",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "203",
-      "slot": 5,
-      "day": 3,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "203",
-      "slot": 6,
-      "day": 3,
-      "group": "3c",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 7,
-      "day": 3,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 8,
-      "day": 3,
-      "group": "1c",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 0,
-      "day": 4,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 1,
-      "day": 4,
-      "group": "3b",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 2,
-      "day": 4,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "Adam"
-    },
-    {
-      "room": "203",
-      "slot": 3,
-      "day": 4,
-      "group": "1a",
-      "class": "English",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 4,
-      "day": 4,
-      "group": "1c",
-      "class": "Geography",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 5,
-      "day": 4,
-      "group": "3b",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "203",
-      "slot": 6,
-      "day": 4,
-      "group": "2a",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "203",
-      "slot": 7,
-      "day": 4,
-      "group": "2a",
-      "class": "Art",
-      "teacher": "John"
-    },
-    {
-      "room": "203",
-      "slot": 8,
-      "day": 4,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 0,
-      "day": 0,
-      "group": "2b",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 1,
-      "day": 0,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 2,
-      "day": 0,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "301",
-      "slot": 3,
-      "day": 0,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "301",
-      "slot": 4,
-      "day": 0,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "John"
-    },
-    {
-      "room": "301",
-      "slot": 5,
-      "day": 0,
-      "group": "2a",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "301",
-      "slot": 6,
-      "day": 0,
-      "group": "3c",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "301",
-      "slot": 7,
-      "day": 0,
-      "group": "1a",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "301",
-      "slot": 8,
-      "day": 0,
-      "group": "2b",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "301",
-      "slot": 0,
-      "day": 1,
-      "group": "3c",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 1,
-      "day": 1,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "301",
-      "slot": 2,
-      "day": 1,
-      "group": "3b",
-      "class": "Art",
-      "teacher": "John"
-    },
-    {
-      "room": "301",
-      "slot": 3,
-      "day": 1,
-      "group": "2b",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "301",
-      "slot": 4,
-      "day": 1,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "301",
-      "slot": 5,
-      "day": 1,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "301",
-      "slot": 6,
-      "day": 1,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 7,
-      "day": 1,
-      "group": "3b",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "301",
-      "slot": 8,
-      "day": 1,
-      "group": "1a",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 0,
-      "day": 2,
-      "group": "2b",
-      "class": "Art",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 1,
-      "day": 2,
-      "group": "2b",
-      "class": "History",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 2,
-      "day": 2,
-      "group": "1c",
-      "class": "Geography",
-      "teacher": "John"
-    },
-    {
-      "room": "301",
-      "slot": 3,
-      "day": 2,
-      "group": "1c",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 4,
-      "day": 2,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Adam"
-    },
-    {
-      "room": "301",
-      "slot": 5,
-      "day": 2,
-      "group": "2b",
-      "class": "History",
-      "teacher": "John"
-    },
-    {
-      "room": "301",
-      "slot": 6,
-      "day": 2,
-      "group": "3c",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "301",
-      "slot": 7,
-      "day": 2,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 8,
-      "day": 2,
-      "group": "1b",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 0,
-      "day": 3,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 1,
-      "day": 3,
-      "group": "2c",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "301",
-      "slot": 2,
-      "day": 3,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Adam"
-    },
-    {
-      "room": "301",
-      "slot": 3,
-      "day": 3,
-      "group": "3a",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 4,
-      "day": 3,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 5,
-      "day": 3,
-      "group": "2c",
-      "class": "PE",
-      "teacher": "John"
-    },
-    {
-      "room": "301",
-      "slot": 6,
-      "day": 3,
-      "group": "3b",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 7,
-      "day": 3,
-      "group": "3c",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "301",
-      "slot": 8,
-      "day": 3,
-      "group": "3b",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 0,
-      "day": 4,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "John"
-    },
-    {
-      "room": "301",
-      "slot": 1,
-      "day": 4,
-      "group": "2a",
-      "class": "Art",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 2,
-      "day": 4,
-      "group": "2b",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "301",
-      "slot": 3,
-      "day": 4,
-      "group": "3a",
-      "class": "Physics",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "301",
-      "slot": 4,
-      "day": 4,
-      "group": "1b",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "301",
-      "slot": 5,
-      "day": 4,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "301",
-      "slot": 6,
-      "day": 4,
-      "group": "2c",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "301",
-      "slot": 7,
-      "day": 4,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "301",
-      "slot": 8,
-      "day": 4,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "302",
-      "slot": 0,
-      "day": 0,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 1,
-      "day": 0,
-      "group": "1b",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 2,
-      "day": 0,
-      "group": "2b",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 3,
-      "day": 0,
-      "group": "3c",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 4,
-      "day": 0,
-      "group": "3c",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 5,
-      "day": 0,
-      "group": "3c",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 6,
-      "day": 0,
-      "group": "2c",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 7,
-      "day": 0,
-      "group": "1c",
-      "class": "Art",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 8,
-      "day": 0,
-      "group": "2c",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "302",
-      "slot": 0,
-      "day": 1,
-      "group": "1b",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 1,
-      "day": 1,
-      "group": "1b",
-      "class": "History",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 2,
-      "day": 1,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 3,
-      "day": 1,
-      "group": "2a",
-      "class": "Math",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 4,
-      "day": 1,
-      "group": "1b",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 5,
-      "day": 1,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 6,
-      "day": 1,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 7,
-      "day": 1,
-      "group": "1b",
-      "class": "PE",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 8,
-      "day": 1,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 0,
-      "day": 2,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 1,
-      "day": 2,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 2,
-      "day": 2,
-      "group": "3a",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 3,
-      "day": 2,
-      "group": "2a",
-      "class": "Art",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 4,
-      "day": 2,
-      "group": "2a",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "302",
-      "slot": 5,
-      "day": 2,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 6,
-      "day": 2,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "John"
-    },
-    {
-      "room": "302",
-      "slot": 7,
-      "day": 2,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 8,
-      "day": 2,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Michael "
-    },
-    {
-      "room": "302",
-      "slot": 0,
-      "day": 3,
-      "group": "1a",
-      "class": "Math",
-      "teacher": "Rick"
-    },
-    {
-      "room": "302",
-      "slot": 1,
-      "day": 3,
-      "group": "3c",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "302",
-      "slot": 2,
-      "day": 3,
-      "group": "1a",
-      "class": "Art",
-      "teacher": "Michael "
-    },
-    {
-      "room": "302",
-      "slot": 3,
-      "day": 3,
-      "group": "2b",
-      "class": "English",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 4,
-      "day": 3,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Martin"
-    },
-    {
-      "room": "302",
-      "slot": 5,
-      "day": 3,
-      "group": "1c",
-      "class": "PE",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 6,
-      "day": 3,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 7,
-      "day": 3,
-      "group": "3b",
-      "class": "English",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 8,
-      "day": 3,
-      "group": "1b",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 0,
-      "day": 4,
-      "group": "3a",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 1,
-      "day": 4,
-      "group": "1c",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "302",
-      "slot": 2,
-      "day": 4,
-      "group": "3a",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "302",
-      "slot": 3,
-      "day": 4,
-      "group": "2b",
-      "class": "History",
-      "teacher": "John"
-    },
-    {
-      "room": "302",
-      "slot": 4,
-      "day": 4,
-      "group": "3b",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 5,
-      "day": 4,
-      "group": "3c",
-      "class": "Math",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "302",
-      "slot": 6,
-      "day": 4,
-      "group": "1a",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "302",
-      "slot": 7,
-      "day": 4,
-      "group": "2b",
-      "class": "Math",
-      "teacher": "John"
-    },
-    {
-      "room": "302",
-      "slot": 8,
-      "day": 4,
-      "group": "1a",
-      "class": "PE",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 0,
-      "day": 0,
-      "group": "2c",
-      "class": "History",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "303",
-      "slot": 1,
-      "day": 0,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 2,
-      "day": 0,
-      "group": "1a",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 3,
-      "day": 0,
-      "group": "1a",
-      "class": "English",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 4,
-      "day": 0,
-      "group": "2b",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 5,
-      "day": 0,
-      "group": "3c",
-      "class": "History",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 6,
-      "day": 0,
-      "group": "1b",
-      "class": "Math",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "303",
-      "slot": 7,
-      "day": 0,
-      "group": "1c",
-      "class": "English",
-      "teacher": "Martin"
-    },
-    {
-      "room": "303",
-      "slot": 8,
-      "day": 0,
-      "group": "2b",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 0,
-      "day": 1,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "303",
-      "slot": 1,
-      "day": 1,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 2,
-      "day": 1,
-      "group": "3b",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 3,
-      "day": 1,
-      "group": "1a",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 4,
-      "day": 1,
-      "group": "3b",
-      "class": "English",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 5,
-      "day": 1,
-      "group": "3a",
-      "class": "Art",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 6,
-      "day": 1,
-      "group": "1c",
-      "class": "History",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "303",
-      "slot": 7,
-      "day": 1,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 8,
-      "day": 1,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 0,
-      "day": 2,
-      "group": "2c",
-      "class": "Art",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 1,
-      "day": 2,
-      "group": "2c",
-      "class": "English",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 2,
-      "day": 2,
-      "group": "3c",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 3,
-      "day": 2,
-      "group": "3c",
-      "class": "Physics",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 4,
-      "day": 2,
-      "group": "1b",
-      "class": "History",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "303",
-      "slot": 5,
-      "day": 2,
-      "group": "1a",
-      "class": "Physics",
-      "teacher": "Martin"
-    },
-    {
-      "room": "303",
-      "slot": 6,
-      "day": 2,
-      "group": "3c",
-      "class": "Physics",
-      "teacher": "John"
-    },
-    {
-      "room": "303",
-      "slot": 7,
-      "day": 2,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "303",
-      "slot": 8,
-      "day": 2,
-      "group": "2b",
-      "class": "Geography",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "303",
-      "slot": 0,
-      "day": 3,
-      "group": "2b",
-      "class": "Physics",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 1,
-      "day": 3,
-      "group": "2b",
-      "class": "English",
-      "teacher": "John"
-    },
-    {
-      "room": "303",
-      "slot": 2,
-      "day": 3,
-      "group": "1a",
-      "class": "Math",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 3,
-      "day": 3,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "John"
-    },
-    {
-      "room": "303",
-      "slot": 4,
-      "day": 3,
-      "group": "1b",
-      "class": "Geography",
-      "teacher": "John"
-    },
-    {
-      "room": "303",
-      "slot": 5,
-      "day": 3,
-      "group": "2c",
-      "class": "Physics",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "303",
-      "slot": 6,
-      "day": 3,
-      "group": "3c",
-      "class": "PE",
-      "teacher": "Rick"
-    },
-    {
-      "room": "303",
-      "slot": 7,
-      "day": 3,
-      "group": "3a",
-      "class": "Math",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 8,
-      "day": 3,
-      "group": "2a",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 0,
-      "day": 4,
-      "group": "1b",
-      "class": "Physics",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 1,
-      "day": 4,
-      "group": "3b",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 2,
-      "day": 4,
-      "group": "1b",
-      "class": "Geography",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 3,
-      "day": 4,
-      "group": "3a",
-      "class": "PE",
-      "teacher": "Adam"
-    },
-    {
-      "room": "303",
-      "slot": 4,
-      "day": 4,
-      "group": "2b",
-      "class": "History",
-      "teacher": "Brandon"
-    },
-    {
-      "room": "303",
-      "slot": 5,
-      "day": 4,
-      "group": "2c",
-      "class": "Math",
-      "teacher": "Martin"
-    },
-    {
-      "room": "303",
-      "slot": 6,
-      "day": 4,
-      "group": "3a",
-      "class": "History",
-      "teacher": "Michael "
-    },
-    {
-      "room": "303",
-      "slot": 7,
-      "day": 4,
-      "group": "2a",
-      "class": "English",
-      "teacher": "Rodriguez"
-    },
-    {
-      "room": "303",
-      "slot": 8,
-      "day": 4,
-      "group": "2c",
-      "class": "History",
-      "teacher": "Adam"
+      "teacher": "Adam",
+      "class": "History"
     }
   ]
 }
