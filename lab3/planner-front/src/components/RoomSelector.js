@@ -1,15 +1,13 @@
 import React from "react";
 
-class RoomSelector extends React.Component {
-  render() {
+function RoomSelector(props){
     return (
-      <select onChange={this.props.handleChange}>
-        {this.props.rooms.map((val, key) => {
+      <select onChange={props.handleRoomChange} defaultValue={props.activeRoom}>
+        {props.rooms.map((val, key) => {
           return <option key={key}>{val}</option>;
         })}
       </select>
     );
-  }
 }
 
 export default RoomSelector;

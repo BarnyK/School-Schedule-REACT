@@ -1,15 +1,26 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import RoomSelector from './components/RoomSelector.js'
+import RoomSelector from "./components/RoomSelector.js";
 class App extends React.Component {
-  state = { rooms: [], teachers: [], classes: [], groups: [], activities: [] };
+  state = {
+    rooms: [],
+    teachers: [],
+    classes: [],
+    groups: [],
+    activities: [],
+    activeRoom: null,
+  };
+
   componentDidMount() {
     // Fetching static lists
     const apiUrl = "http://localhost:3001/";
     fetch(apiUrl + "room")
       .then((response) => response.json())
-      .then((data) => this.setState({ rooms: data }));
+      .then((data) => {
+        this.setState({ rooms: data, activeRoom: data[0] });
+        this.updateActivities();
+      });
     fetch(apiUrl + "teacher")
       .then((response) => response.json())
       .then((data) => this.setState({ teachers: data }));
@@ -19,18 +30,35 @@ class App extends React.Component {
     fetch(apiUrl + "class")
       .then((response) => response.json())
       .then((data) => this.setState({ classes: data }));
+    this.updateActivities();
   }
 
-  handleRoomChange(){
-    console.log("xd!");
+  handleRoomChange(event) {
+    this.setState({
+      activeRoom: event.target.value,
+    });
+    this.updateActivities();
+  }
+
+  updateActivities() {
+    let room = this.state.activeRoom;
+    console.log(room);
+    if (room) {
+      fetch("http://localhost:3001/activity?room=" + room)
+        .then((response) => response.json())
+        .then((data) => this.setState({ activities: data }));
+    }
   }
 
   render() {
-    var { rooms } = this.state;
     return (
       <div className="App">
         <header className="App-header">Hi</header>
-        <RoomSelector rooms={this.state.rooms} handleChange={this.handleRoomChange}/>
+        <RoomSelector
+          activeRoom={this.state.activeRoom}
+          rooms={this.state.rooms}
+          handleRoomChange={this.handleRoomChange.bind(this)}
+        />
       </div>
     );
   }
