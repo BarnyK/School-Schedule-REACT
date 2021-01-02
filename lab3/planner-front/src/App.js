@@ -57,18 +57,18 @@ class App extends React.Component {
   }
 
   updateActivities(room = null) {
-    if(!room)
-      room = this.state.activeRoom;
+    if (!room) room = this.state.activeRoom;
     if (room) {
       fetch("http://localhost:3001/activity?room=" + room)
         .then((response) => response.json())
         .then((data) => {
           let newActivities = Array(45).fill(null);
-          for(let i = 0; i < data.length; i++){
+          for (let i = 0; i < data.length; i++) {
             let act = data[i];
-            newActivities[act.slot*5+act.day*1] = act;
+            newActivities[act.slot * 5 + act.day * 1] = act;
           }
-          this.setState({ activities: newActivities })});
+          this.setState({ activities: newActivities });
+        });
     }
   }
 
