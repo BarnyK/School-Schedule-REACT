@@ -5,8 +5,8 @@ var fs = require("fs");
 function makeActivity(body) {
   return {
     room: body.room,
-    slot: body.slot,
-    day: body.day,
+    slot: parseInt(body.slot),
+    day: parseInt(body.day),
     group: body.group,
     teacher: body.teacher,
     class: body.class,
@@ -26,7 +26,9 @@ function checkValidActivity(activity, data) {
       data["rooms"].includes(activity.room) &&
       data["groups"].includes(activity.group) &&
       data["teachers"].includes(activity.teacher) &&
-      data["classes"].includes(activity.class)
+      data["classes"].includes(activity.class) &&
+      !isNaN(activity.day) &&
+      !isNaN(activity.slot)
     ) {
       return true;
     }
@@ -103,7 +105,7 @@ router.delete("/", function (req, res) {
     typeof act.slot !== "undefined" &&
     typeof act.room !== "undefined"
   ) {
-    data["activities"] = data["activities"].filter(
+    let newActivities = data["activities"].filter(
       (activity) =>
         !(
           act.day == activity.day &&
@@ -111,9 +113,11 @@ router.delete("/", function (req, res) {
           act.room == activity.room
         )
     );
-    data = JSON.stringify(data, null, 2);
-    fs.writeFileSync("data.json", data);
-    return res.sendStatus(200);
+    if (!data["activities"] == newActivities) {
+      data = JSON.stringify(data, null, 2);
+      fs.writeFileSync("data.json", data);
+      return res.sendStatus(200);
+    }
   }
   return res.sendStatus(400);
 });
