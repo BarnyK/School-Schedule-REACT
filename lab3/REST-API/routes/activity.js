@@ -98,24 +98,22 @@ router.delete("/", function (req, res) {
   let act = makeActivity(req.body);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
-  if (checkValidActivity(act, data)) {
-    if (
-      typeof act.day !== "undefined" &&
-      typeof act.slot !== "undefined" &&
-      typeof act.room !== "undefined"
-    ) {
-      data["activities"] = data["activities"].filter(
-        (activity) =>
-          !(
-            act.day == activity.day &&
-            act.slot == activity.slot &&
-            act.room == activity.room
-          )
-      );
-      data = JSON.stringify(data, null, 2);
-      fs.writeFileSync("data.json", data);
-      return res.sendStatus(200);
-    }
+  if (
+    typeof act.day !== "undefined" &&
+    typeof act.slot !== "undefined" &&
+    typeof act.room !== "undefined"
+  ) {
+    data["activities"] = data["activities"].filter(
+      (activity) =>
+        !(
+          act.day == activity.day &&
+          act.slot == activity.slot &&
+          act.room == activity.room
+        )
+    );
+    data = JSON.stringify(data, null, 2);
+    fs.writeFileSync("data.json", data);
+    return res.sendStatus(200);
   }
   return res.sendStatus(400);
 });
