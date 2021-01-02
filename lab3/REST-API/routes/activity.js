@@ -28,7 +28,11 @@ function checkValidActivity(activity, data) {
       data["teachers"].includes(activity.teacher) &&
       data["classes"].includes(activity.class) &&
       !isNaN(activity.day) &&
-      !isNaN(activity.slot)
+      !isNaN(activity.slot) &&
+      activity.day >= 0 &&
+      activity.day < 5 &&
+      activity.slot >= 0 &&
+      activity.slot < 9
     ) {
       return true;
     }
