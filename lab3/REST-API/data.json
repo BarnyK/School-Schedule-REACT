@@ -3191,6 +3191,14 @@
       "group": "2c",
       "room": "303",
       "class": "History"
+    },
+    {
+      "room": "101",
+      "slot": 0,
+      "day": 0,
+      "group": "1b",
+      "teacher": "Adam",
+      "class": "Math"
     }
   ]
 }
