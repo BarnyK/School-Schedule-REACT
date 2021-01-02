@@ -1,14 +1,25 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./App.css";
-import RoomSelector from "./components/RoomSelector.js";
+import RoomSelector from "./components/RoomSelector";
+import ActivityTable from "./components/ActivityTable";
+
+function emptyActivity() {
+  return {
+    room: null,
+    teacher: null,
+    group: null,
+    class: null,
+    day: null,
+    slot: null,
+  };
+}
 class App extends React.Component {
   state = {
     rooms: [],
     teachers: [],
     classes: [],
     groups: [],
-    activities: [],
+    activities: Array(45).fill(null),
     activeRoom: null,
   };
 
@@ -34,56 +45,48 @@ class App extends React.Component {
   }
 
   handleRoomChange(event) {
+    let room = event.target.value;
     this.setState({
-      activeRoom: event.target.value,
+      activeRoom: room,
     });
-    this.updateActivities();
+    this.updateActivities(room);
   }
 
-  updateActivities() {
-    let room = this.state.activeRoom;
-    console.log(room);
+  handleActivityDoubleClick(actIndex) {
+    console.log(this.state.activities[actIndex]);
+  }
+
+  updateActivities(room = null) {
+    if(!room)
+      room = this.state.activeRoom;
     if (room) {
       fetch("http://localhost:3001/activity?room=" + room)
         .then((response) => response.json())
-        .then((data) => this.setState({ activities: data }));
+        .then((data) => {
+          let newActivities = Array(45).fill(null);
+          for(let i = 0; i < data.length; i++){
+            let act = data[i];
+            newActivities[act.slot*5+act.day*1] = act;
+          }
+          this.setState({ activities: newActivities })});
     }
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">Hi</header>
         <RoomSelector
           activeRoom={this.state.activeRoom}
           rooms={this.state.rooms}
           handleRoomChange={this.handleRoomChange.bind(this)}
         />
+        <ActivityTable
+          activities={this.state.activities}
+          handleActivityDoubleClick={this.handleActivityDoubleClick.bind(this)}
+        />
       </div>
     );
   }
 }
-
-// function App2() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//       {/* <Test /> */}
-//     </div>
-//   );
-// }
 
 export default App;
