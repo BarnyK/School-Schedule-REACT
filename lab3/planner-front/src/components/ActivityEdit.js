@@ -1,30 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import RemoveActivityButton from "./RemoveActivityButton"
-
-function ActivityEditSelector(props) {
-  if (props.list.length === 0) return null; //Fix for defaultvalue
-  return (
-    <div className="activity-edit-selector">
-      <label htmlFor={props.name}>{props.name}: </label>
-      <select
-        className="form-control"
-        name={props.name.toLowerCase()}
-        disabled={props.disabled}
-        defaultValue={props.default}
-      >
-        {props.list.map((v, k) => {
-          return (
-            <option value={v} key={k}>
-              {v}
-            </option>
-          );
-        })}
-      </select>
-    </div>
-  );
-}
-
+import RemoveActivityButton from "./RemoveActivityButton";
+import ActivityEditSelector from "./ActivityEditSelector";
 
 class ActivityEdit extends React.Component {
   days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
@@ -45,6 +22,9 @@ class ActivityEdit extends React.Component {
     groups: [],
     classes: [],
     activity: null,
+    group: "",
+    teacher: "",
+    class: "",
   };
 
   componentDidMount() {
@@ -70,19 +50,63 @@ class ActivityEdit extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         if (typeof data[0] !== "undefined")
-          this.setState({ activity: data[0], exists: true });
+          this.setState({
+            activity: data[0],
+            exists: true,
+            class: data[0].class,
+            group: data[0].group,
+            teacher: data[0].teacher,
+          });
       });
     // Fetching static lists
-
     fetch(apiUrl + "teacher")
       .then((response) => response.json())
-      .then((data) => this.setState({ teachers: data }));
+      .then((data) => {
+        this.setState({ teachers: data });
+        if (!this.state.teacher) this.setState({ teacher: data[0] });
+      });
     fetch(apiUrl + "group")
       .then((response) => response.json())
-      .then((data) => this.setState({ groups: data }));
+      .then((data) => {
+        this.setState({ groups: data });
+        if (!this.state.group) this.setState({ group: data[0] });
+      });
     fetch(apiUrl + "class")
       .then((response) => response.json())
-      .then((data) => this.setState({ classes: data }));
+      .then((data) => {
+        this.setState({ classes: data });
+        if (!this.state.class) this.setState({ class: data[0] });
+      });
+  }
+
+  handleSaveClick() {
+    let newAct = this.state.activity;
+    let method = this.state.exists ? "PUT" : "POST";
+    newAct.teacher = this.state.teacher;
+    newAct.group = this.state.group;
+    newAct.class = this.state.class;
+    fetch("http://localhost:3001/activity", {
+      method: method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newAct),
+    }).then((response) => {
+      if (response.status === 200) {
+        this.setState({
+          activity: newAct,
+          exists: true,
+        });
+      }
+    });
+  }
+
+  handleChange(event) {
+    let target = event.target;
+    console.log(target.value);
+    this.setState({
+      [target.name]: target.value,
+    });
   }
 
   render() {
@@ -94,9 +118,16 @@ class ActivityEdit extends React.Component {
           <Link to="/" type="button" className="btn btn-dark">
             Go back
           </Link>
-          <RemoveActivityButton activity={this.state.activity} disabled={!this.state.exists} />
-          <button type="button" className="btn btn-success">
-            Add
+          <RemoveActivityButton
+            activity={this.state.activity}
+            disabled={!this.state.exists}
+          />
+          <button
+            type="button"
+            onClick={this.handleSaveClick.bind(this)}
+            className="btn btn-success"
+          >
+            Save
           </button>
           <form className="edit-activity-form">
             <input type="hidden" name="day" value={this.state.activity.day} />
@@ -106,31 +137,37 @@ class ActivityEdit extends React.Component {
               name="Room"
               list={[act.room]}
               disabled={true}
+              onChange={this.handleChange.bind(this)}
             />
             <ActivityEditSelector
               name="Hours"
               list={[this.slots[act.slot]]}
               disabled={true}
+              onChange={this.handleChange.bind(this)}
             />
             <ActivityEditSelector
               name="Day"
               list={[this.days[act.day]]}
               disabled={true}
+              onChange={this.handleChange.bind(this)}
             />
             <ActivityEditSelector
               name="Teacher"
               list={this.state.teachers}
-              default={act.teacher}
+              default={this.state.teacher}
+              onChange={this.handleChange.bind(this)}
             />
             <ActivityEditSelector
               name="Group"
               list={this.state.groups}
-              default={act.group}
+              default={this.state.group}
+              onChange={this.handleChange.bind(this)}
             />
             <ActivityEditSelector
               name="Class"
               list={this.state.classes}
-              default={act.class}
+              default={this.state.class}
+              onChange={this.handleChange.bind(this)}
             />
           </form>
         </main>

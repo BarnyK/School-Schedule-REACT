@@ -102,7 +102,6 @@ router.put("/", function (req, res) {
 router.delete("/", function (req, res) {
   // Delete activity
   let act = makeActivity(req.body);
-  console.log(act);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
   if (checkValidActivity(act,data)) {

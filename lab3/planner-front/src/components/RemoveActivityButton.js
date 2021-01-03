@@ -5,7 +5,6 @@ function RemoveActivityButton(props) {
     const history = useHistory();
     const handleClick = () => {
       if(props.activity){
-        console.log(props.activity);
         fetch("http://localhost:3001/activity", {
             method: "DELETE",
             headers: {
@@ -13,7 +12,7 @@ function RemoveActivityButton(props) {
             },
             body: JSON.stringify(props.activity),
           }).then((response) => {
-            if (response.status == 200) {
+            if (response.status === 200) {
               history.push("/");
             }
           });
