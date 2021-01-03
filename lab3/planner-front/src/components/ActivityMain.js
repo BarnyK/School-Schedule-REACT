@@ -11,26 +11,21 @@ class ActivityMain extends React.Component {
 
   componentDidMount() {
     const apiUrl = "http://localhost:3001/";
-    if (typeof this.props.location.state !== "undefined") {
-      this.setState({
-        activeRoom: this.props.location.state.activeRoom,
-      });
-      this.getActivities(this.props.location.state.activeRoom);
-      fetch(apiUrl + "room")
-        .then((response) => response.json())
-        .then((data) => {
-          this.setState({ rooms: data });
-        });
-    } else {
-      fetch(apiUrl + "room")
-        .then((response) => response.json())
-        .then((data) => {
+    console.log(localStorage);
+    fetch(apiUrl + "room")
+      .then((response) => response.json())
+      .then((data) => {
+        if (
+          typeof localStorage.activeRoom !== "undefined" &&
+          data.includes(localStorage.activeRoom)
+        ) {
+          this.setState({ rooms: data, activeRoom: localStorage.activeRoom });
+          this.getActivities(localStorage.activeRoom);
+        } else {
           this.setState({ rooms: data, activeRoom: data[0] });
           this.getActivities(data[0]);
-        });
-    }
-
-    this.getActivities();
+        }
+      });
   }
 
   handleRoomChange(event) {
@@ -38,6 +33,7 @@ class ActivityMain extends React.Component {
     this.setState({
       activeRoom: room,
     });
+    localStorage.setItem("activeRoom", room);
     this.getActivities(room);
   }
 

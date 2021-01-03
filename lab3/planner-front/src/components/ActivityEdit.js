@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import RemoveActivityButton from "./RemoveActivityButton";
 import ActivityEditSelector from "./ActivityEditSelector";
 
 class ActivityEdit extends React.Component {
@@ -97,9 +96,24 @@ class ActivityEdit extends React.Component {
           activity: newAct,
           exists: true,
         });
+        this.props.history.push("/");
+      }
+    });
+  }
+
+  handleRemoveClick() {
+    let act = this.state.activity;
+    fetch("http://localhost:3001/activity", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(act),
+    }).then((response) => {
+      if (response.status === 200) {
         this.props.history.push({
           pathname: "/",
-          state: { activeRoom: newAct.room },
+          state: { activeRoom: act.room },
         });
       }
     });
@@ -120,19 +134,20 @@ class ActivityEdit extends React.Component {
       return (
         <main className="pb-3">
           <Link
-            to={{
-              pathname: "/",
-              state: { activeRoom: this.state.activity.room},
-            }}
+            to="/"
             type="button"
             className="btn btn-dark"
           >
             Go back
           </Link>
-          <RemoveActivityButton
-            activity={this.state.activity}
+          <button
+            type="button"
+            onClick={this.handleRemoveClick.bind(this)}
+            className="btn btn-danger"
             disabled={!this.state.exists}
-          />
+          >
+            Remove
+          </button>
           <button
             type="button"
             onClick={this.handleSaveClick.bind(this)}
