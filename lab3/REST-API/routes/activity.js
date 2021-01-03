@@ -102,22 +102,24 @@ router.put("/", function (req, res) {
 router.delete("/", function (req, res) {
   // Delete activity
   let act = makeActivity(req.body);
+  console.log(act);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
-  if (
-    typeof act.day !== "undefined" &&
-    typeof act.slot !== "undefined" &&
-    typeof act.room !== "undefined"
-  ) {
-    let newActivities = data["activities"].filter(
-      (activity) =>
-        !(
-          act.day == activity.day &&
-          act.slot == activity.slot &&
-          act.room == activity.room
-        )
-    );
-    if (!data["activities"] == newActivities) {
+  if (checkValidActivity(act,data)) {
+    if (
+      typeof act.day !== "undefined" &&
+      typeof act.slot !== "undefined" &&
+      typeof act.room !== "undefined"
+    ) {
+      console.log(act);
+      data["activities"] = data["activities"].filter(
+        (activity) =>
+          !(
+            act.day == activity.day &&
+            act.slot == activity.slot &&
+            act.room == activity.room
+          )
+      );
       data = JSON.stringify(data, null, 2);
       fs.writeFileSync("data.json", data);
       return res.sendStatus(200);
