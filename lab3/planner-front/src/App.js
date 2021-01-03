@@ -3,16 +3,6 @@ import "./App.css";
 import RoomSelector from "./components/RoomSelector";
 import ActivityTable from "./components/ActivityTable";
 
-function emptyActivity() {
-  return {
-    room: null,
-    teacher: null,
-    group: null,
-    class: null,
-    day: null,
-    slot: null,
-  };
-}
 class App extends React.Component {
   state = {
     rooms: [],
@@ -30,7 +20,7 @@ class App extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         this.setState({ rooms: data, activeRoom: data[0] });
-        this.updateActivities();
+        this.getActivities();
       });
     fetch(apiUrl + "teacher")
       .then((response) => response.json())
@@ -41,7 +31,7 @@ class App extends React.Component {
     fetch(apiUrl + "class")
       .then((response) => response.json())
       .then((data) => this.setState({ classes: data }));
-    this.updateActivities();
+    this.getActivities();
   }
 
   handleRoomChange(event) {
@@ -49,14 +39,33 @@ class App extends React.Component {
     this.setState({
       activeRoom: room,
     });
-    this.updateActivities(room);
+    this.getActivities(room);
   }
 
   handleActivityDoubleClick(actIndex) {
     console.log(this.state.activities[actIndex]);
   }
 
-  updateActivities(room = null) {
+  removeActivity(actIndex) {
+    let act = this.state.activities[actIndex];
+    if (act != null) {
+      fetch("http://localhost:3001/activity",{
+        method: "DELETE",
+        headers:{
+          'Content-Type':'application/json'
+        },
+        body: JSON.stringify(act)
+      });
+      // Fetch request
+      let newActivities = this.state.activities.slice();
+      newActivities[actIndex] = null;
+      this.setState({
+        activities: newActivities,
+      });
+    }
+  }
+
+  getActivities(room = null) {
     if (!room) room = this.state.activeRoom;
     if (room) {
       fetch("http://localhost:3001/activity?room=" + room)
