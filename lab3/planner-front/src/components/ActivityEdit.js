@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import RemoveActivityButton from "./RemoveActivityButton"
 
 function ActivityEditSelector(props) {
   if (props.list.length === 0) return null; //Fix for defaultvalue
@@ -22,6 +24,7 @@ function ActivityEditSelector(props) {
     </div>
   );
 }
+
 
 class ActivityEdit extends React.Component {
   days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
@@ -67,7 +70,7 @@ class ActivityEdit extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         if (typeof data[0] !== "undefined")
-          this.setState({ activity: data[0] });
+          this.setState({ activity: data[0], exists: true });
       });
     // Fetching static lists
 
@@ -82,34 +85,19 @@ class ActivityEdit extends React.Component {
       .then((data) => this.setState({ classes: data }));
   }
 
-  removeActivity(actIndex) {
-    let act = this.state.activities[actIndex];
-    if (act != null) {
-      fetch("http://localhost:3001/activity", {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(act),
-      });
-      // Fetch request
-      let newActivities = this.state.activities.slice();
-      newActivities[actIndex] = null;
-      this.setState({
-        activities: newActivities,
-      });
-    }
-  }
-
   render() {
     if (this.state.activity) {
       let act = this.state.activity;
 
       return (
         <main className="pb-3">
-        <button type="button" className="btn btn-dark">Go back</button>
-        <button type="button" className="btn btn-danger">Remove</button>
-        <button type="button" className="btn btn-success">Add</button>
+          <Link to="/" type="button" className="btn btn-dark">
+            Go back
+          </Link>
+          <RemoveActivityButton activity={this.state.activity} disabled={!this.state.exists} />
+          <button type="button" className="btn btn-success">
+            Add
+          </button>
           <form className="edit-activity-form">
             <input type="hidden" name="day" value={this.state.activity.day} />
             <input type="hidden" name="slot" value={this.state.activity.slot} />
