@@ -17,44 +17,39 @@ class ActivityTable extends React.Component {
   renderCell(day, slot) {
     var actIndex = slot * 5 + day;
     let act = this.props.activities[actIndex];
-    return (
-      <ActivityTableCell
-        key={actIndex}
-        activity={act}
-        handleActivityDoubleClick={() =>
-          this.props.handleActivityDoubleClick(actIndex)
-        }
-      />
-    );
+    return <ActivityTableCell key={actIndex} activity={act} />;
   }
+
   render() {
     return (
-      <table className="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            {this.days.map((v, k) => {
+      <div className="ActivityTable">
+        <table className="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              {this.days.map((v, k) => {
+                return (
+                  <th scope="col" key={k}>
+                    {v}
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
+          <tbody>
+            {this.timeSlots.map((v, indexY) => {
               return (
-                <th scope="col" key={k}>
-                  {v}
-                </th>
+                <tr key={indexY}>
+                  <th scope="row">{v}</th>
+                  {this.days.map((v, indexX) => {
+                    return this.renderCell(indexX, indexY);
+                  })}
+                </tr>
               );
             })}
-          </tr>
-        </thead>
-        <tbody>
-          {this.timeSlots.map((v, indexY) => {
-            return (
-              <tr key={indexY}>
-                <th scope="row">{v}</th>
-                {this.days.map((v, indexX) => {
-                  return this.renderCell(indexX, indexY);
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
     );
   }
 }
