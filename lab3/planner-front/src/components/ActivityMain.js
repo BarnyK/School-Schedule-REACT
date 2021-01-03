@@ -2,7 +2,6 @@ import React from "react";
 import RoomSelector from "./RoomSelector";
 import ActivityTable from "./ActivityTable";
 
-
 class ActivityMain extends React.Component {
   state = {
     rooms: [],
@@ -11,14 +10,26 @@ class ActivityMain extends React.Component {
   };
 
   componentDidMount() {
-    // Fetching static lists
     const apiUrl = "http://localhost:3001/";
-    fetch(apiUrl + "room")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({ rooms: data, activeRoom: data[0] });
-        this.getActivities();
+    if (typeof this.props.location.state !== "undefined") {
+      this.setState({
+        activeRoom: this.props.location.state.activeRoom,
       });
+      this.getActivities(this.props.location.state.activeRoom);
+      fetch(apiUrl + "room")
+        .then((response) => response.json())
+        .then((data) => {
+          this.setState({ rooms: data });
+        });
+    } else {
+      fetch(apiUrl + "room")
+        .then((response) => response.json())
+        .then((data) => {
+          this.setState({ rooms: data, activeRoom: data[0] });
+          this.getActivities(data[0]);
+        });
+    }
+
     this.getActivities();
   }
 

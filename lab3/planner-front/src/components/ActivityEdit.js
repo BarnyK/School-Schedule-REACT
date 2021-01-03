@@ -97,6 +97,10 @@ class ActivityEdit extends React.Component {
           activity: newAct,
           exists: true,
         });
+        this.props.history.push({
+          pathname: "/",
+          state: { activeRoom: newAct.room },
+        });
       }
     });
   }
@@ -115,7 +119,14 @@ class ActivityEdit extends React.Component {
 
       return (
         <main className="pb-3">
-          <Link to="/" type="button" className="btn btn-dark">
+          <Link
+            to={{
+              pathname: "/",
+              state: { activeRoom: this.state.activity.room},
+            }}
+            type="button"
+            className="btn btn-dark"
+          >
             Go back
           </Link>
           <RemoveActivityButton
