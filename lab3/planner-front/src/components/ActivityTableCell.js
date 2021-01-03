@@ -7,11 +7,8 @@ function ActivityTableCell(props) {
     history.push(
       `/EditActivity/${props.activity.room},${props.activity.day},${props.activity.slot}`
     );
-  if (typeof props.activity !== "undefined" && props.activity != null) {
-    return <td onDoubleClick={handleClick}>{props.activity.group}</td>;
-  }
 
-  return <td></td>;
+  return <td onDoubleClick={handleClick}>{props.activity.group}</td>;
 }
 
 export default ActivityTableCell;

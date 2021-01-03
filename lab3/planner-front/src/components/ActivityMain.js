@@ -1,7 +1,7 @@
 import React from "react";
 import RoomSelector from "./RoomSelector";
 import ActivityTable from "./ActivityTable";
-import { Redirect, useHistory } from "react-router-dom";
+
 
 class ActivityMain extends React.Component {
   state = {
@@ -30,26 +30,6 @@ class ActivityMain extends React.Component {
     this.getActivities(room);
   }
 
-
-  removeActivity(actIndex) {
-    let act = this.state.activities[actIndex];
-    if (act != null) {
-      fetch("http://localhost:3001/activity", {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(act),
-      });
-      // Fetch request
-      let newActivities = this.state.activities.slice();
-      newActivities[actIndex] = null;
-      this.setState({
-        activities: newActivities,
-      });
-    }
-  }
-
   getActivities(room = null) {
     if (!room) room = this.state.activeRoom;
     if (room) {
@@ -67,18 +47,23 @@ class ActivityMain extends React.Component {
   }
 
   render() {
-    return (
-      <div className="ActivityMain">
-        <RoomSelector
-          activeRoom={this.state.activeRoom}
-          rooms={this.state.rooms}
-          handleRoomChange={this.handleRoomChange.bind(this)}
-        />
-        <ActivityTable
-          activities={this.state.activities}
-        />
-      </div>
-    );
+    if (this.state.rooms.length > 0) {
+      return (
+        <main className="pb-3" role="main">
+          <RoomSelector
+            activeRoom={this.state.activeRoom}
+            rooms={this.state.rooms}
+            handleRoomChange={this.handleRoomChange.bind(this)}
+          />
+          <ActivityTable
+            activeRoom={this.state.activeRoom}
+            activities={this.state.activities}
+          />
+        </main>
+      );
+    } else {
+      return <div>No Room Data Available</div>;
+    }
   }
 }
 

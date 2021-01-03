@@ -1,5 +1,28 @@
 import React from "react";
 
+function ActivityEditSelector(props) {
+  if (props.list.length === 0) return null; //Fix for defaultvalue
+  return (
+    <div className="activity-edit-selector">
+      <label htmlFor={props.name}>{props.name}: </label>
+      <select
+        className="form-control"
+        name={props.name.toLowerCase()}
+        disabled={props.disabled}
+        defaultValue={props.default}
+      >
+        {props.list.map((v, k) => {
+          return (
+            <option value={v} key={k}>
+              {v}
+            </option>
+          );
+        })}
+      </select>
+    </div>
+  );
+}
+
 class ActivityEdit extends React.Component {
   days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
   slots = [
@@ -14,12 +37,11 @@ class ActivityEdit extends React.Component {
     "16:30 - 17:15",
   ];
   state = {
-    room: null,
-    day: null,
-    slot: null,
+    exists: false,
     teachers: [],
     groups: [],
     classes: [],
+    activity: null,
   };
 
   componentDidMount() {
@@ -28,10 +50,13 @@ class ActivityEdit extends React.Component {
     let day = this.props.match.params.day;
     let slot = this.props.match.params.slot;
     this.setState({
-      room: room,
-      day: day,
-      slot: slot,
+      activity: {
+        room: room,
+        day: parseInt(day),
+        slot: parseInt(slot),
+      },
     });
+
     let actUrl = new URL(apiUrl + "activity");
     actUrl.search = new URLSearchParams({
       day: day,
@@ -40,7 +65,10 @@ class ActivityEdit extends React.Component {
     }).toString();
     fetch(actUrl)
       .then((response) => response.json())
-      .then((data) => this.setState({ activity: data }));
+      .then((data) => {
+        if (typeof data[0] !== "undefined")
+          this.setState({ activity: data[0] });
+      });
     // Fetching static lists
 
     fetch(apiUrl + "teacher")
@@ -54,14 +82,74 @@ class ActivityEdit extends React.Component {
       .then((data) => this.setState({ classes: data }));
   }
 
+  removeActivity(actIndex) {
+    let act = this.state.activities[actIndex];
+    if (act != null) {
+      fetch("http://localhost:3001/activity", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(act),
+      });
+      // Fetch request
+      let newActivities = this.state.activities.slice();
+      newActivities[actIndex] = null;
+      this.setState({
+        activities: newActivities,
+      });
+    }
+  }
+
   render() {
-    return (
-      <div>
-        <p>Day: {this.days[this.state.day]}</p>
-        <p>Slot: {this.slots[this.state.slot]}</p>
-        <p>Room: {this.state.room}</p>
-      </div>
-    );
+    if (this.state.activity) {
+      let act = this.state.activity;
+
+      return (
+        <main className="pb-3">
+        <button type="button" className="btn btn-dark">Go back</button>
+        <button type="button" className="btn btn-danger">Remove</button>
+        <button type="button" className="btn btn-success">Add</button>
+          <form className="edit-activity-form">
+            <input type="hidden" name="day" value={this.state.activity.day} />
+            <input type="hidden" name="slot" value={this.state.activity.slot} />
+            <input type="hidden" name="room" value={this.state.activity.room} />
+            <ActivityEditSelector
+              name="Room"
+              list={[act.room]}
+              disabled={true}
+            />
+            <ActivityEditSelector
+              name="Hours"
+              list={[this.slots[act.slot]]}
+              disabled={true}
+            />
+            <ActivityEditSelector
+              name="Day"
+              list={[this.days[act.day]]}
+              disabled={true}
+            />
+            <ActivityEditSelector
+              name="Teacher"
+              list={this.state.teachers}
+              default={act.teacher}
+            />
+            <ActivityEditSelector
+              name="Group"
+              list={this.state.groups}
+              default={act.group}
+            />
+            <ActivityEditSelector
+              name="Class"
+              list={this.state.classes}
+              default={act.class}
+            />
+          </form>
+        </main>
+      );
+    } else {
+      return <div>Loading</div>;
+    }
   }
 }
 

@@ -17,12 +17,15 @@ class ActivityTable extends React.Component {
   renderCell(day, slot) {
     var actIndex = slot * 5 + day;
     let act = this.props.activities[actIndex];
+    if (act == null) {
+      act = { room: this.props.activeRoom, group: null, slot: slot, day: day };
+    }
     return <ActivityTableCell key={actIndex} activity={act} />;
   }
 
   render() {
     return (
-      <div className="ActivityTable">
+      <div className="plan-table">
         <table className="table table-bordered">
           <thead>
             <tr>
@@ -36,7 +39,7 @@ class ActivityTable extends React.Component {
               })}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="plan-table-body">
             {this.timeSlots.map((v, indexY) => {
               return (
                 <tr key={indexY}>
