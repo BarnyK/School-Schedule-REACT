@@ -9,7 +9,7 @@ var teacherRouter = require('./routes/teacher');
 var groupRouter = require('./routes/group');
 
 var app = express();
-var port = 3001;
+var port = 5001;
 
 app.use(cors());
 app.use(logger('dev'));

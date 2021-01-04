@@ -27,7 +27,7 @@ class ActivityEdit extends React.Component {
   };
 
   componentDidMount() {
-    const apiUrl = "http://localhost:3001/";
+    const apiUrl = process.env.REACT_APP_API_HOST;
     let room = this.props.match.params.room;
     let day = this.props.match.params.day;
     let slot = this.props.match.params.slot;
@@ -84,7 +84,7 @@ class ActivityEdit extends React.Component {
     newAct.teacher = this.state.teacher;
     newAct.group = this.state.group;
     newAct.class = this.state.class;
-    fetch("http://localhost:3001/activity", {
+    fetch(process.env.REACT_APP_API_HOST + "activity", {
       method: method,
       headers: {
         "Content-Type": "application/json",
@@ -103,7 +103,7 @@ class ActivityEdit extends React.Component {
 
   handleRemoveClick() {
     let act = this.state.activity;
-    fetch("http://localhost:3001/activity", {
+    fetch(process.env.REACT_APP_API_HOST + "activity", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

@@ -10,9 +10,7 @@ class ActivityMain extends React.Component {
   };
 
   componentDidMount() {
-    const apiUrl = "http://localhost:3001/";
-    console.log(localStorage);
-    fetch(apiUrl + "room")
+    fetch(process.env.REACT_APP_API_HOST + "room")
       .then((response) => response.json())
       .then((data) => {
         if (
@@ -40,7 +38,7 @@ class ActivityMain extends React.Component {
   getActivities(room = null) {
     if (!room) room = this.state.activeRoom;
     if (room) {
-      fetch("http://localhost:3001/activity?room=" + room)
+      fetch(process.env.REACT_APP_API_HOST + "activity?room=" + room)
         .then((response) => response.json())
         .then((data) => {
           let newActivities = Array(45).fill(null);

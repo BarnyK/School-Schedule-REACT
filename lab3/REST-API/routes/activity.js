@@ -14,6 +14,9 @@ function makeActivity(body) {
 }
 
 function checkValidActivity(activity, data) {
+  /*  Checks if given activity has all paramteres defined
+   *  Checks if given activity parameters are of correct values
+   */
   if (
     typeof activity.slot !== "undefined" &&
     typeof activity.room !== "undefined" &&
@@ -41,6 +44,7 @@ function checkValidActivity(activity, data) {
 }
 
 function checkActivityExists(activity, activityList) {
+  // Checks if given activity exists in database, returns index of it
   return activityList.findIndex(
     (act) =>
       act.room == activity.room &&
@@ -50,6 +54,7 @@ function checkActivityExists(activity, activityList) {
 }
 
 router.get("/", function (req, res) {
+  // Get Request, takes optional parameters room, slot, day to narrow the search
   let room = req.query.room;
   let slot = req.query.slot;
   let day = req.query.day;
@@ -65,7 +70,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/", function (req, res) {
-  // Create activity
+  // Create activity from request body
   let act = makeActivity(req.body);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
@@ -104,25 +109,21 @@ router.delete("/", function (req, res) {
   let act = makeActivity(req.body);
   let data = fs.readFileSync("data.json");
   data = JSON.parse(data);
-  if (checkValidActivity(act,data)) {
-    if (
-      typeof act.day !== "undefined" &&
-      typeof act.slot !== "undefined" &&
-      typeof act.room !== "undefined"
-    ) {
-      console.log(act);
-      data["activities"] = data["activities"].filter(
-        (activity) =>
-          !(
-            act.day == activity.day &&
-            act.slot == activity.slot &&
-            act.room == activity.room
-          )
-      );
-      data = JSON.stringify(data, null, 2);
-      fs.writeFileSync("data.json", data);
-      return res.sendStatus(200);
-    }
+  if (
+    checkValidActivity(act, data) &&
+    checkActivityExists(act, data["activities"])
+  ) {
+    data["activities"] = data["activities"].filter(
+      (activity) =>
+        !(
+          act.day == activity.day &&
+          act.slot == activity.slot &&
+          act.room == activity.room
+        )
+    );
+    data = JSON.stringify(data, null, 2);
+    fs.writeFileSync("data.json", data);
+    return res.sendStatus(200);
   }
   return res.sendStatus(400);
 });
