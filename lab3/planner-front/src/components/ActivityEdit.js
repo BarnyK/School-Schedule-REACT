@@ -133,25 +133,27 @@ class ActivityEdit extends React.Component {
       let act = this.state.activity;
 
       return (
-        <main className="pb-3">
-          <Link to="/" type="button" className="btn btn-dark">
-            Go back
-          </Link>
-          <button
-            type="button"
-            onClick={this.handleRemoveClick.bind(this)}
-            className="btn btn-danger"
-            disabled={!this.state.exists}
-          >
-            Remove
-          </button>
-          <button
-            type="button"
-            onClick={this.handleSaveClick.bind(this)}
-            className="btn btn-success"
-          >
-            {this.state.exists ? "Save" : "Add"}
-          </button>
+        <main className="col-sm-6 offset-sm-3">
+          <div class="edit-activity-buttons">
+            <Link to="/" type="button" className="btn btn-dark">
+              Go back
+            </Link>
+            <button
+              type="button"
+              onClick={this.handleRemoveClick.bind(this)}
+              className="btn btn-danger"
+              disabled={!this.state.exists}
+            >
+              Remove
+            </button>
+            <button
+              type="button"
+              onClick={this.handleSaveClick.bind(this)}
+              className="btn btn-success"
+            >
+              {this.state.exists ? "Save" : "Add"}
+            </button>
+          </div>
           <form className="edit-activity-form">
             <input type="hidden" name="day" value={this.state.activity.day} />
             <input type="hidden" name="slot" value={this.state.activity.slot} />

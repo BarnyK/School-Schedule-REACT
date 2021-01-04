@@ -3,15 +3,24 @@
   margin-bottom: 10px;
 }
 
-.room-selector-label{
+.room-selector-label {
   margin-bottom: 5px;
 }
-.btn {
-  margin-right: 10px;
-  width:10%;
+.dit-activity-buttons{
+  align-items: center;
 }
+.btn {
+  margin-left: 1.6%;
+  margin-right: 1.6%;
+  width: 30%;
+}
+
 .activity-edit-selector {
   margin-top: 10px;
+}
+
+.activity-edit-selector-label {
+  margin-bottom: 10px;
 }
 
 #root {
@@ -23,9 +32,11 @@
   margin-top: 20px;
   overflow-y: auto;
 }
+
 .plan-table-body > tr > th {
   white-space: nowrap;
 }
+
 .plan-table-body > tr > td {
   cursor: pointer;
   text-align: center;
