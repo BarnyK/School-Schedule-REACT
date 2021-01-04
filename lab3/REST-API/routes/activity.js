@@ -79,7 +79,7 @@ router.post("/", function (req, res) {
     checkActivityExists(act, data["activities"]) == -1
   ) {
     data["activities"].push(act);
-    data = JSON.stringify(data, null, 2);
+    data = JSON.stringify(data);
     fs.writeFileSync("data.json", data);
     return res.sendStatus(200);
   } else {
@@ -96,7 +96,7 @@ router.put("/", function (req, res) {
     let i = checkActivityExists(act, data["activities"]);
     if (i !== -1) {
       data["activities"][i] = act;
-      data = JSON.stringify(data, null, 2);
+      data = JSON.stringify(data);
       fs.writeFileSync("data.json", data);
       return res.sendStatus(200);
     }
@@ -121,7 +121,7 @@ router.delete("/", function (req, res) {
           act.room == activity.room
         )
     );
-    data = JSON.stringify(data, null, 2);
+    data = JSON.stringify(data);
     fs.writeFileSync("data.json", data);
     return res.sendStatus(200);
   }
