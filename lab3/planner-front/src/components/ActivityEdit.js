@@ -38,7 +38,7 @@ class ActivityEdit extends React.Component {
         slot: parseInt(slot),
       },
     });
-
+    // Fetch Activity
     let actUrl = new URL(apiUrl + "activity");
     actUrl.search = new URLSearchParams({
       day: day,
@@ -62,7 +62,7 @@ class ActivityEdit extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         this.setState({ teachers: data });
-        if (!this.state.teacher) this.setState({ teacher: data[0] });
+        if (!this.state.teacher) this.setState({ teacher: data[0] }); // Because of race condition we check to assign value
       });
     fetch(apiUrl + "group")
       .then((response) => response.json())
