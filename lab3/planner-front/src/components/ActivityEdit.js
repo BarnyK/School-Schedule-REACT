@@ -79,6 +79,7 @@ class ActivityEdit extends React.Component {
   }
 
   handleSaveClick() {
+    // Sends an API request to create or modify an activity
     let newAct = this.state.activity;
     let method = this.state.exists ? "PUT" : "POST";
     newAct.teacher = this.state.teacher;
@@ -102,6 +103,7 @@ class ActivityEdit extends React.Component {
   }
 
   handleRemoveClick() {
+    // Sends an API DELETE request for activity
     let act = this.state.activity;
     fetch(process.env.REACT_APP_API_HOST + "activity", {
       method: "DELETE",
@@ -110,16 +112,15 @@ class ActivityEdit extends React.Component {
       },
       body: JSON.stringify(act),
     }).then((response) => {
-      if (response.status === 200) {
-        this.props.history.push({
-          pathname: "/",
-          state: { activeRoom: act.room },
-        });
-      }
+      this.props.history.push({
+        pathname: "/",
+        state: { activeRoom: act.room },
+      });
     });
   }
 
   handleChange(event) {
+    // Handle change of values of form selectors
     let target = event.target;
     console.log(target.value);
     this.setState({
@@ -128,16 +129,12 @@ class ActivityEdit extends React.Component {
   }
 
   render() {
-    if (this.state.activity) {
+    if (this.state.teacher !== "" && this.state.activity) {
       let act = this.state.activity;
 
       return (
         <main className="pb-3">
-          <Link
-            to="/"
-            type="button"
-            className="btn btn-dark"
-          >
+          <Link to="/" type="button" className="btn btn-dark">
             Go back
           </Link>
           <button
@@ -153,7 +150,7 @@ class ActivityEdit extends React.Component {
             onClick={this.handleSaveClick.bind(this)}
             className="btn btn-success"
           >
-            Save
+            {this.state.exists ? "Save" : "Add"}
           </button>
           <form className="edit-activity-form">
             <input type="hidden" name="day" value={this.state.activity.day} />
@@ -199,7 +196,7 @@ class ActivityEdit extends React.Component {
         </main>
       );
     } else {
-      return <div>Loading</div>;
+      return <div>Loading API Connection...</div>;
     }
   }
 }

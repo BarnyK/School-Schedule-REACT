@@ -67,7 +67,7 @@ class ActivityMain extends React.Component {
         </main>
       );
     } else {
-      return <div>No Room Data Available</div>;
+      return <div>No API connection</div>;
     }
   }
 }
