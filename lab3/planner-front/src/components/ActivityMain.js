@@ -10,6 +10,7 @@ class ActivityMain extends React.Component {
   };
 
   componentDidMount() {
+    // Fetch list of rooms and activities
     fetch(process.env.REACT_APP_API_HOST + "room")
       .then((response) => response.json())
       .then((data) => {
@@ -36,6 +37,7 @@ class ActivityMain extends React.Component {
   }
 
   getActivities(room = null) {
+    // Gets activity list from API
     if (!room) room = this.state.activeRoom;
     if (room) {
       fetch(process.env.REACT_APP_API_HOST + "activity?room=" + room)

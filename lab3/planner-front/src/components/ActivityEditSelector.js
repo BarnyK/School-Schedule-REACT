@@ -1,7 +1,6 @@
 import React from "react";
 
 function ActivityEditSelector(props) {
-  if (props.list.length === 0) return null; //Fix for defaultvalue
   return (
     <div className="activity-edit-selector">
       <label className="activity-edit-selector-label" htmlFor={props.name}>
