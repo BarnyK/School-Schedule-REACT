@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Installs dependancies, builds react application and runs them 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR/planner-front && npm install && npm run build && serve -s build &
 cd $DIR/REST-API && npm install && node app.js
