@@ -139,7 +139,7 @@ class ActivityEdit extends React.Component {
 
       return (
         <main className="col-sm-6 offset-sm-3">
-          <div class="edit-activity-buttons">
+          <div className="edit-activity-buttons">
             <Link
               to={{
                 pathname: "/",
