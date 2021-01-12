@@ -41,18 +41,17 @@ class ActivityMain extends React.Component {
   getActivities(room = null) {
     // Gets activity list from API
     if (!room) room = this.state.activeRoom;
-    if (room) {
-      fetch(process.env.REACT_APP_API_HOST + "activity?room=" + room)
-        .then((response) => response.json())
-        .then((data) => {
-          let newActivities = Array(45).fill(null);
-          for (let i = 0; i < data.length; i++) {
-            let act = data[i];
-            newActivities[act.slot * 5 + act.day * 1] = act;
-          }
-          this.setState({ activities: newActivities });
-        });
-    }
+
+    fetch(process.env.REACT_APP_API_HOST + "activity?room=" + room)
+      .then((response) => response.json())
+      .then((data) => {
+        let newActivities = Array(45).fill(null);
+        for (let i = 0; i < data.length; i++) {
+          let act = data[i];
+          newActivities[act.slot * 5 + act.day * 1] = act;
+        }
+        this.setState({ activities: newActivities });
+      });
   }
 
   render() {

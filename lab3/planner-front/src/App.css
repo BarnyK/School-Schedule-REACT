@@ -31,15 +31,16 @@
   table-layout: fixed;
   margin-top: 20px;
   overflow-y: auto;
+  text-align: center;
 }
 
 .plan-table-body > tr > th {
+  
   white-space: nowrap;
 }
 
 .plan-table-body > tr > td {
   cursor: pointer;
-  text-align: center;
   width: 17%;
 }
 

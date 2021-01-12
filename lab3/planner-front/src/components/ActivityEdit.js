@@ -38,6 +38,7 @@ class ActivityEdit extends React.Component {
         slot: parseInt(slot),
       },
     });
+    
     // Fetch Activity
     let actUrl = new URL(apiUrl + "activity");
     actUrl.search = new URLSearchParams({
@@ -57,6 +58,7 @@ class ActivityEdit extends React.Component {
             teacher: data[0].teacher,
           });
       });
+      
     // Fetching static lists
     fetch(apiUrl + "teacher")
       .then((response) => response.json())

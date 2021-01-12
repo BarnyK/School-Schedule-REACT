@@ -1,6 +1,7 @@
 import React from "react";
 
 function ActivityEditSelector(props) {
+  // Renders Select element of activity edit form
   return (
     <div className="activity-edit-selector">
       <label className="activity-edit-selector-label" htmlFor={props.name}>

@@ -27,7 +27,7 @@ class ActivityTable extends React.Component {
     return (
       <div className="plan-table">
         <table className="table table-bordered">
-          <thead>
+          <thead className="plan-table-head">
             <tr>
               <th scope="col">#</th>
               {this.days.map((v, k) => {
