@@ -134,6 +134,7 @@ class ActivityEdit extends React.Component {
   }
 
   render() {
+    // Check if state is already loaded
     if (this.state.teacher !== "" && this.state.activity) {
       let act = this.state.activity;
 

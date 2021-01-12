@@ -70,7 +70,7 @@ class ActivityMain extends React.Component {
         </main>
       );
     } else {
-      return <div>No API connection</div>;
+      return <div>Loading API Connection...</div>;
     }
   }
 }
