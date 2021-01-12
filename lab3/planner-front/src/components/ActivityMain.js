@@ -15,11 +15,14 @@ class ActivityMain extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         if (
-          typeof localStorage.activeRoom !== "undefined" &&
-          data.includes(localStorage.activeRoom)
+          typeof this.props.location.state !== "undefined" &&
+          data.includes(this.props.location.state.activeRoom)
         ) {
-          this.setState({ rooms: data, activeRoom: localStorage.activeRoom });
-          this.getActivities(localStorage.activeRoom);
+          this.setState({
+            rooms: data,
+            activeRoom: this.props.location.state.activeRoom,
+          });
+          this.getActivities(this.props.location.state.activeRoom);
         } else {
           this.setState({ rooms: data, activeRoom: data[0] });
           this.getActivities(data[0]);
@@ -32,7 +35,6 @@ class ActivityMain extends React.Component {
     this.setState({
       activeRoom: room,
     });
-    localStorage.setItem("activeRoom", room);
     this.getActivities(room);
   }
 
