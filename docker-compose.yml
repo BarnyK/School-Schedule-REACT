@@ -8,3 +8,8 @@ services:
     build: REST-API
     ports:
       - "5001:5001"
+    volumes:
+      - schedulevolume:/app
+volumes:
+  schedulevolume:
+
