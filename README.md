@@ -1,8 +1,18 @@
 # School Planner
 
-Project is made of 2 Node.js applications: React frontend and express REST API server
+Project is made of 2 Node.js applications: React frontend and express REST API server.
+
+Data is persisted in a json file as per lecturers guidelines.
 
 ## How to run:
+
+### 0. Using docker-compose
+
+I've added dockerfiles so now running the project is as simple as downloading it and running
+
+`docker-compose up -d`
+
+in the project directory.
 
 
 ### 1. Using script
