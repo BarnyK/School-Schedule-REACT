@@ -127,7 +127,6 @@ class ActivityEdit extends React.Component {
   handleChange(event) {
     // Handle change of values of form selectors
     let target = event.target;
-    console.log(target.value);
     this.setState({
       [target.name]: target.value,
     });

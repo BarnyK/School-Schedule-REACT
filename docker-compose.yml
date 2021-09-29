@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  front:
+    build: planner-front
+    ports:
+      - "5000:5000"
+  rest-api:
+    build: REST-API
+    ports:
+      - "5001:5001"
+    volumes:
+      - schedulevolume:/app
+volumes:
+  schedulevolume:
+
